@@ -8,20 +8,38 @@
 
 <body>
     <nav>
-        <ul class="navigation">
-            <li class="nav-menu main-menu">
-                <a href="/pages/index.html">Home Page</a>
-            </li>
-            <li class="nav-menu main-menu">
-                <a href="/pages/top_page.html">Top 10 Board Games </a>
-            </li>
-            <li class="nav-menu search-bar">
-                <div class="find-game">
-                    <label for="board-search">Find board game:</label>
-                    <input id="board-search" type="text" placeholder="Find board game...">
-                </div>
-            </li>
-        </ul>
+        <a class="logo" href="/pages/index.html">
+            <img class="dragon-logo" src="/media/images/logo/dragon-logo.svg" alt="boardemic logo">
+        </a>
+        <div class="triple_bar mobile_only" onclick="transitionTripleBar(this)">
+            <div class="triple_bar_1"></div>
+            <div class="triple_bar_2"></div>
+            <div class="triple_bar_3"></div>
+        </div>
+        
+        <div id="full-menu">
+            <a href="/pages/discover.html">Discover Games</a>
+        </div>
     </nav>
+    
+    <script>
+        var toggleValue = 0;
+        fullMenu = document.getElementById("full-menu");
+        
+        function transitionTripleBar(triple_bar) {
+            triple_bar.classList.toggle("change");
+            
+            if (toggleValue == 0) {
+               fullMenu.style.height = "auto";
+               fullMenu.style.opacity = "1";
+               toggleValue = 1;
+            } else {
+               fullMenu.style.height = "0";
+               fullMenu.style.opacity = "0";
+               toggleValue = 0;
+            } 
+        }
+    </script>
+
 </body>
 </html>

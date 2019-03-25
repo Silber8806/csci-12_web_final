@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Boardemic.com - Board Game Search </title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+
+<body>
+    <nav>
+        <a class="logo" href="/pages/index.html">
+            <img class="dragon-logo" src="/media/images/logo/dragon-logo.svg" alt="boardemic logo">
+        </a>
+        <div class="triple_bar mobile_only" onclick="transitionTripleBar(this)">
+            <div class="triple_bar_1"></div>
+            <div class="triple_bar_2"></div>
+            <div class="triple_bar_3"></div>
+        </div>
+        
+        <div id="full-menu">
+            <a href="/pages/discover.html">Discover Games</a>
+        </div>
+    </nav>
+
+    <script>
+        var toggleValue = 0;
+        fullMenu = document.getElementById("full-menu");
+        
+        function transitionTripleBar(triple_bar) {
+            triple_bar.classList.toggle("change");
+            
+            if (toggleValue == 0) {
+               fullMenu.style.height = "auto";
+               fullMenu.style.opacity = "1";
+               toggleValue = 1;
+            } else {
+               fullMenu.style.height = "0";
+               fullMenu.style.opacity = "0";
+               toggleValue = 0;
+            } 
+        }
+    </script>
+
+</body>
+</html>
