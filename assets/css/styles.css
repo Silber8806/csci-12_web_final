@@ -88,7 +88,6 @@ a:visited {
 main {
     position: absolute;
     transition: top .4s ease 0s;
-    margin: 
     z-index: 90;
 }
 
@@ -144,6 +143,10 @@ main {
     .main-nav {
         overflow:hidden;
     }
+    
+    main {
+        margin: 50px 0px 0px 85px;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -166,6 +169,10 @@ main {
         display: inline-block;
         clear: left;
         padding: 3px 3px 3px 0px;
+    }
+    
+    main {
+        margin: 70px 0px 0px 85px;
     }
 } 
 
