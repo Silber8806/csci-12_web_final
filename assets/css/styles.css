@@ -4,20 +4,28 @@
 
 :root {
   --major-color: #000079;
-  --complement-color: #fd9200;
+  --complement-color: #fda500;
   --background-color: #ffffff;
   --menu-color: #edf6ff;
+  --menu-color-hover: #d3e9fc;
 }
+
+* {
+  box-sizing: border-box;
+}
+
 
 body {
     margin: 0px;
     padding: 0px;
+    width: 100%;
     background-color: var(--background-color);
 }
 
 nav {
     position: fixed;
     z-index: 100;
+    top: 0px;
 }
 
 .main-nav {
@@ -25,6 +33,7 @@ nav {
     background-color: var(--major-color);
     width: 100%;
     overflow: auto;
+    padding: 0px 0px px;
 }
 
 a:link {
@@ -50,7 +59,6 @@ a:visited {
 #mobile-menu {
     background-color: var(--menu-color);
     width: 100%;
-    text-align: center;
     height: 0px;
     opacity: 0;
     transition: opacity .5s ease-in;
@@ -60,8 +68,7 @@ a:visited {
 #mobile-menu a {
     color: var(--major-color)
     display: block;
-    margin:auto;
-    text-decoration: underline;
+    margin: 0px 0px 0px 90px;
 }
 
 #desktop-menu {
@@ -69,26 +76,40 @@ a:visited {
     text-decoration: none;
 }
 
-#desktop-menu a {
+#desktop-menu {
     display: inline-block;
     margin:auto;
-    text-decoration: underline;
     color: var(--major-color)
     float: left;
     margin: 2px 0px 0px 10px; 
+    padding: 0px 5px;
+    border-right: 1px dashed lightgrey;
 }
 
 /* logos */
 
 .dragon-logo {
-    height: 50px;
+    height: 60px;
+    padding: 5px 0px 0px 0px;
     margin: 0px 0px 0px 10px;
 }
 
+.logo-text {
+    color: var(--complement-color);
+    display: inline-block;
+    padding: 0px;
+    margin: 0px 0px 10px 0px;
+}
+
 main {
-    position: absolute;
     transition: top .4s ease 0s;
     z-index: 90;
+}
+
+footer {
+    border-top: 1px solid grey;
+    background-color: var(--major-color);
+    height: 40px;
 }
 
 /* content */
@@ -98,6 +119,7 @@ main {
     .triple_bar {
       display: inline-block;
       float: right; 
+      padding: 1px 5px 0px 0px;
       margin: 5px;
       cursor: pointer;
     }
@@ -145,7 +167,7 @@ main {
     }
     
     main {
-        margin: 50px 0px 0px 85px;
+        margin: 100px 45px 0px 95px;
     }
 }
 
@@ -167,12 +189,11 @@ main {
     
     #desktop-menu {
         display: inline-block;
-        clear: left;
-        padding: 3px 3px 3px 0px;
+        padding: 3px 3px 3px 84px;
     }
     
     main {
-        margin: 70px 0px 0px 85px;
+        margin: 120px 45px 0px 95px;
     }
 } 
 
