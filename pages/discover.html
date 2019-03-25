@@ -8,23 +8,32 @@
 
 <body>
     <nav>
-        <a class="logo" href="/pages/index.html">
-            <img class="dragon-logo" src="/media/images/logo/dragon-logo.svg" alt="boardemic logo">
-        </a>
-        <div class="triple_bar mobile_only" onclick="transitionTripleBar(this)">
-            <div class="triple_bar_1"></div>
-            <div class="triple_bar_2"></div>
-            <div class="triple_bar_3"></div>
+        <div class="main-nav">
+            <a class="logo" href="/pages/index.html">
+                <img class="dragon-logo" src="/media/images/logo/dragon-logo.svg" alt="boardemic logo">
+            </a>
+
+            <div class="triple_bar mobile_only" onclick="transitionTripleBar(this)">
+                <div class="triple_bar_1"></div>
+                <div class="triple_bar_2"></div>
+                <div class="triple_bar_3"></div>
+            </div>
+
+            <div id="mobile-menu" class="mobile_only">
+                <a href="/pages/discover.html">Discover Games</a>
+            </div>   
+            <div class="sub-nav">
+                 <div id="desktop-menu">
+                    <a href="/pages/discover.html">Discover Games</a>
+                </div>            
+            </div>
         </div>
-        
-        <div id="full-menu">
-            <a href="/pages/discover.html">Discover Games</a>
-        </div>
+
     </nav>
 
     <script>
         var toggleValue = 0;
-        fullMenu = document.getElementById("full-menu");
+        fullMenu = document.getElementById("mobile-menu");
         
         function transitionTripleBar(triple_bar) {
             triple_bar.classList.toggle("change");

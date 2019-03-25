@@ -3,28 +3,80 @@
 @import url('https://fonts.googleapis.com/css?family=Arbutus+Slab|Germania+One|Rakkas|Rambla');
 
 :root {
-  --main-bg-color: #307b26;
-  --main-color: #d2fa92;
+  --major-color: #000079;
+  --complement-color: #fd9200;
+  --background-color: #ffffff;
+  --menu-color: #edf6ff;
 }
 
 body {
     margin: 0vw;
     padding: 0vw;
-    background-color: aliceblue;
+    background-color: var(--background-color);
 }
 
-nav {
+.main-nav {
     position: fixed;
-    background-color: navy;
-    position: fixed;
+    background-color: var(--major-color);
     width: 100%;
     overflow: auto;
 }
 
+a:link {
+    color: black;
+    text-decoration: none;
+    background-color: inherit;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;   
+    background-color: inherit;
+}
+
+/* menus */
+
+.sub-nav {
+    width: 100%;
+    background-color: var(--menu-color);
+    transition: opacity .5s ease-in;
+}
+
+#mobile-menu {
+    background-color: var(--menu-color);
+    width: 100%;
+    text-align: center;
+    height: 0px;
+    opacity: 0;
+    transition: opacity .5s ease-in;
+}
+
+#mobile-menu a {
+    color: var(--major-color)
+    display: block;
+    margin:auto;
+    text-decoration: underline;
+}
+
+#desktop-menu {
+    background-color: var(--menu-color);
+    text-decoration: none;
+}
+
+#desktop-menu a {
+    display: inline-block;
+    margin:auto;
+    text-decoration: underline;
+    color: var(--major-color)
+    float: left;
+    margin: 2px 0px 0px 10px; 
+}
+
+/* logos */
+
 .dragon-logo {
     height: 50px;
-    fill: white;
-    margin: 0px 10px;
+    margin: 0px 0px 0px 10px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -39,7 +91,7 @@ nav {
     .triple_bar_1, .triple_bar_2, .triple_bar_3 {
       width: 35px;
       height: 5px;
-      background-color: #a6d5e5;
+      background-color: var(--complement-color);
       margin: 6px 0;
       transition: .5s;
     }
@@ -57,34 +109,45 @@ nav {
       transform: rotate(45deg) translate(-8px, -8px);
     }
     
-    #full-menu {
-        background-color: aliceblue;
-        width: 100%;
-        text-align: center;
-        height: 0;
+    /* menu */
+    
+    .sub-nav {
+        height: 0px;
         opacity: 0;
-        transition: opacity .5s ease-in;
     }
-
-    #full-menu a {
+     
+    #mobile-menu {
         display: block;
-        margin:auto;
     }
     
-    /* Triple Bar Code */
+    #desktop-menu {
+        display: inline-block;
+    }
 
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 601px) {
+    .sub-nav {
+        height: auto;
+        opacity: 1;
+    }
+    
     .mobile_only {
         display: none;         
+    }
+    
+    #mobile-menu {
+        display: none;
+    }
+    
+    #desktop-menu {
+        display: inline-block;
+        clear: left;
     }
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    .mobile_only {
-        display: none; 
-    }
+
 } 
