@@ -4,6 +4,8 @@
 <head>
     <title> Boardemic.com - Board Game Search </title>
     <link rel="stylesheet" href="../assets/css/styles.css">
+    <script type="text/javascript" src="/assets/vendor/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="/assets/js/events.js"></script>
 </head>
 
 <body>
@@ -14,10 +16,10 @@
             </a>
             <p class="logo-text"> <span id="site-name">Boardemic </span><br><span id="slogan"> Games gone Viral</span></p>
 
-            <div class="triple_bar mobile_only" onclick="transitionTripleBar(this)">
-                <div class="triple_bar_1"></div>
-                <div class="triple_bar_2"></div>
-                <div class="triple_bar_3"></div>
+            <div id="triple_bar" class="mobile_only">
+                <div id="triple_bar_1"></div>
+                <div id="triple_bar_2"></div>
+                <div id="triple_bar_3"></div>
             </div>
 
             <div id="mobile-menu" class="mobile_only menu-item">
@@ -63,22 +65,7 @@
     </footer>
 
     <script>
-        var toggleValue = 0;
-        fullMenu = document.getElementById("mobile-menu");
-        
-        function transitionTripleBar(triple_bar) {
-            triple_bar.classList.toggle("change");
-            
-            if (toggleValue == 0) {
-               fullMenu.style.height = "auto";
-               fullMenu.style.opacity = "1";
-               toggleValue = 1;
-            } else {
-               fullMenu.style.height = "0";
-               fullMenu.style.opacity = "0";
-               toggleValue = 0;
-            } 
-        }
+
     </script>
 
 </body>

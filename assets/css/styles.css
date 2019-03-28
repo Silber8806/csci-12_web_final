@@ -195,7 +195,7 @@ footer {
     .col-s-12 {width: 100%;}
       
     /* Triple Bar Code */
-    .triple_bar {
+    #triple_bar {
       display: inline-block;
       float: right; 
       padding: 1px 5px 0px 0px;
@@ -203,7 +203,7 @@ footer {
       cursor: pointer;
     }
     
-    .triple_bar_1, .triple_bar_2, .triple_bar_3 {
+    #triple_bar_1, #triple_bar_2, #triple_bar_3 {
       width: 35px;
       height: 5px;
       background-color: var(--complement-color);
@@ -212,14 +212,14 @@ footer {
     }
 
     /* Changes on Triple Bar  */
-    .change .triple_bar_1 {
+    .change #triple_bar_1 {
       -webkit-transform: rotate(-45deg) translate(-9px, 6px);
       transform: rotate(-45deg) translate(-9px, 6px);
     }
     
-    .change .triple_bar_2 {opacity: 0;}
+    .change #triple_bar_2 {opacity: 0;}
     
-    .change .triple_bar_3 {
+    .change #triple_bar_3 {
       -webkit-transform: rotate(45deg) translate(-8px, -8px);
       transform: rotate(45deg) translate(-8px, -8px);
     }
