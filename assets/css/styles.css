@@ -127,6 +127,10 @@ main {
     width: 100%;
 }
 
+#discover-tool {
+    width: 100%;
+}
+
 main p,
 main h1 {
     padding: 0px;
