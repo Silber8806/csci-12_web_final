@@ -166,6 +166,11 @@ footer {
 
 @media only screen and (max-width: 600px) {
     
+    image_404 {
+        display: inline-block;
+        width: 40%;
+    }
+    
     .desktop_only {
         display: none;         
     }
