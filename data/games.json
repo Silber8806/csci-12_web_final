@@ -2,21 +2,39 @@
     "gloomhaven" : {
         "id" : "gloomhaven",
         "title" : "Gloomhaven",
-        "main-image": "gloomhaven.jpg"
+        "main-image": "gloomhaven.jpg",
+        "gallery": [
+            {"title": "gloomhaven box", "href": "gloomhaven.jpg"},
+            {"title": "gloomhaven board", "href": "gloomhaven-board.jpg"},
+            {"title": "gloomhaven character sheet", "href": "gloomhaven-character.jpg"}
+        ]
     },
     "pandemic" : {
         "id" : "pandemic",
         "title" : "Pandemic",
-        "main-image": "pandemic.jpg"
+        "main-image": "pandemic.jpg",
+        "gallery": [
+            {"title": "pandemic box", "href": "pandemic.jpg"},
+            {"title": "pandemic board", "href": "pandemic-board.jpg"},
+            {"title": "pandemic characters", "href": "pandemic-cards.jpg"}
+        ]
     },
     "telestrations": {
         "id": "telestrations",
         "title": "Telestrations",
-        "main-image": "telestrations-after-dark.JPG"
+        "main-image": "telestrations-after-dark.jpg",
+        "gallery": [
+            {"title": "telestrations: after dark edition - box", "href": "telestrations-after-dark.jpg"},
+            {"title": "telestrations: after dark - components", "href": "telestrations-images.jpg"}
+        ]
     },
     "descent": {
         "id" : "descent",
         "title": "Descent: Journey into Darkness",
-        "main-image": "descent-journeys-in-the-dark.jpg"
+        "main-image": "descent-journeys-in-the-dark.jpg",
+        "gallery": [
+            {"title": "Descent: Journey into Darkness - box", "href": "descent-journeys-in-the-dark.jpg"},
+            {"title": "Descent: Journey into Darkness", "href": "descent-board.jpg"}
+        ]
     }
 }
