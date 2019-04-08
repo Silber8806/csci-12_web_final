@@ -1,0 +1,18 @@
+{
+    "gloomhaven" : {
+        "title" : "Gloomhaven",
+        "main-image": "gloomhaven.jpg"
+    },
+    "pandemic" : {
+        "title" : "Pandemic",
+        "main-image": "pandemic.jpg"
+    },
+    "telestrations": {
+        "title": "Telestrations",
+        "main-image": "telestrations-after-dark.JPG"
+    },
+    "descent": {
+        "title": "Descent: Journey into Darkness",
+        "main-image": "descent-journeys-in-the-dark.jpg"
+    }
+}
