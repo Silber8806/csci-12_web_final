@@ -114,6 +114,57 @@ nav {
     border-right: 1px dashed lightgrey;
 }
 
+/* aside content */
+
+aside {
+    font-family: "Quicksand"; 
+    font-size: 12px;
+    position: fixed;
+    margin: 0px;
+    padding: 0px;
+    background: var(--menu-color);
+    height: calc(100% - 100px);
+    border: 0 solid lightgrey;
+    border-width: 0px .5px .5px 0px;
+}
+
+aside ul {
+    margin: 0px;
+    padding: 0px;
+    width: 95px;
+    border: 0 solid lightgrey;
+    border-width: 0px 0px .5px 0px;
+}
+
+aside li {
+    margin: 0px;
+    padding: 5px 10px;
+    list-style-type: none;
+    display: block;
+    border: 0 solid lightgrey;
+    border-width: .5px 0px 0px 0px;
+}
+
+aside ul:first-child {
+    border: 0 solid lightgrey;
+    border-width: 0px 0px 0px 0px;    
+}
+
+.slide {
+    margin: 4px 0px;
+    width: 30px;
+    text-align: center;
+}
+
+.slide-label {
+    margin: 15px;
+}
+
+.discover-product {
+    border: 0 solid lightgrey; 
+    border-width: 0px 0px 0px 0px; 
+}
+
 /* main content */
 
 main {
@@ -160,6 +211,7 @@ footer {
     border-top: 1px solid grey;
     background-color: var(--major-color);
     height: 40px;
+    z-index: 1;
 }
 
 /* END of default styles */
@@ -228,7 +280,7 @@ footer {
     }
     
     main {
-        margin: 120px 45px 0px 95px;
+        margin: 110px 45px 0px 95px;
     }
 }
 
