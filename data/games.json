@@ -3,6 +3,15 @@
         "id" : "gloomhaven",
         "title" : "Gloomhaven",
         "summary": "Gloomhaven is a highly-rated dungeon crawler with 90+ scenarios, a global campaign and a dynamic combat system.",
+        "rating": 8.9,
+        "category": "Dungeon Crawler",
+        "players-min": 1,
+        "players-max": 4,
+        "players-best": 3,
+        "time-min": 60,
+        "time-max": 120,
+        "age": 12,
+        "complexity": 3.79,
         "main-image": "gloomhaven.jpg",
         "gallery": [
             {"title": "gloomhaven box", "href": "gloomhaven.jpg"},
@@ -14,6 +23,15 @@
         "id" : "pandemic",
         "title" : "Pandemic",
         "summary": "Pandemic is a cooperative board game where 4-6 friends work together to cure 4 global epidemics before it dooms the world!",
+        "rating": 7.6,
+        "category": "Cooperative",
+        "players-min": 2,
+        "players-max": 4,
+        "players-best": 4,
+        "time-min": 45,
+        "time-max": 45,
+        "age": 8,
+        "complexity": 2.42,
         "main-image": "pandemic.jpg",
         "gallery": [
             {"title": "pandemic box", "href": "pandemic.jpg"},
@@ -25,6 +43,15 @@
         "id": "telestrations",
         "title": "Telestrations",
         "summary": "Telestrations: after dark is a risque social game where people draw pictures of words provided and pass the drawing to another player to guess the original word.  This is done in repeated fashion.",
+        "rating": 7.1,
+        "category": "Social",
+        "players-min": 4,
+        "players-max": 8,
+        "players-best": 6,
+        "time-min": 20,
+        "time-max": 30,
+        "age": 17,
+        "complexity": 1.00,
         "main-image": "telestrations-after-dark.jpg",
         "gallery": [
             {"title": "telestrations: after dark edition - box", "href": "telestrations-after-dark.jpg"},
@@ -35,56 +62,15 @@
         "id" : "descent",
         "title": "Descent: Journey into Darkness",
         "summary": "Descent is a dungeon crawler with an engaging highly descriptive plot, a series of modular boards and beautiful figurines.",
-        "main-image": "descent-journeys-in-the-dark.jpg",
-        "gallery": [
-            {"title": "Descent: Journey into Darkness - box", "href": "descent-journeys-in-the-dark.jpg"},
-            {"title": "Descent: Journey into Darkness", "href": "descent-board.jpg"}
-        ]
-    },
-    "telestrations1": {
-        "id": "telestrations",
-        "title": "Telestrations",
-        "summary": "Telestrations: after dark is a risque social game where people draw pictures of words provided and pass the drawing to another player to guess the original word.  This is done in repeated fashion.",
-        "main-image": "telestrations-after-dark.jpg",
-        "gallery": [
-            {"title": "telestrations: after dark edition - box", "href": "telestrations-after-dark.jpg"},
-            {"title": "telestrations: after dark - components", "href": "telestrations-images.jpg"}
-        ]
-    },
-    "descent1": {
-        "id" : "descent",
-        "title": "Descent: Journey into Darkness",
-        "summary": "Descent is a dungeon crawler with an engaging highly descriptive plot, a series of modular boards and beautiful figurines.",
-        "main-image": "descent-journeys-in-the-dark.jpg",
-        "gallery": [
-            {"title": "Descent: Journey into Darkness - box", "href": "descent-journeys-in-the-dark.jpg"},
-            {"title": "Descent: Journey into Darkness", "href": "descent-board.jpg"}
-        ]
-    },
-    "telestrations2": {
-        "id": "telestrations",
-        "title": "Telestrations",
-        "summary": "Telestrations: after dark is a risque social game where people draw pictures of words provided and pass the drawing to another player to guess the original word.  This is done in repeated fashion.",
-        "main-image": "telestrations-after-dark.jpg",
-        "gallery": [
-            {"title": "telestrations: after dark edition - box", "href": "telestrations-after-dark.jpg"},
-            {"title": "telestrations: after dark - components", "href": "telestrations-images.jpg"}
-        ]
-    },
-    "descent2": {
-        "id" : "descent",
-        "title": "Descent: Journey into Darkness",
-        "summary": "Descent is a dungeon crawler with an engaging highly descriptive plot, a series of modular boards and beautiful figurines.",
-        "main-image": "descent-journeys-in-the-dark.jpg",
-        "gallery": [
-            {"title": "Descent: Journey into Darkness - box", "href": "descent-journeys-in-the-dark.jpg"},
-            {"title": "Descent: Journey into Darkness", "href": "descent-board.jpg"}
-        ]
-    },
-    "descent3": {
-        "id" : "descent",
-        "title": "Descent: Journey into Darkness",
-        "summary": "Descent is a dungeon crawler with an engaging highly descriptive plot, a series of modular boards and beautiful figurines.",
+        "rating": 7.7,
+        "category": "Dungeon Crawler",
+        "players-min": 2,
+        "players-max": 5,
+        "players-best": 5,
+        "time-min": 120,
+        "time-max": 120,
+        "age": 14,
+        "complexity": 3.21,
         "main-image": "descent-journeys-in-the-dark.jpg",
         "gallery": [
             {"title": "Descent: Journey into Darkness - box", "href": "descent-journeys-in-the-dark.jpg"},

@@ -5,7 +5,6 @@
     <title> Boardemic.com - Board Game Search </title>
     <link rel="stylesheet" href="/assets/css/styles.css">
     <link rel="stylesheet" href="/assets/css/grid_layouts.css">
-    <link rel="stylesheet" href="/assets/vendor/css/swipebox.min.css">
 </head>
 
 <body>
@@ -32,25 +31,25 @@
     <aside>
         <ul>
             <li> Categories </li>
-            <li><label for="players"><input type="checkbox"> Social </label></li>
-            <li><label for="players"><input type="checkbox"> Dungeon </label></li>
-            <li><label for="players"><input type="checkbox">Coop </label></li>
+            <li><label for="gameTypeSocial"><input type="checkbox" id="gameTypeSocial" class="gameFilter"> Social </label></li>
+            <li><label for="gameTypeDungeon"><input type="checkbox" id="gameTypeDungeon" class="gameFilter"> Dungeon </label></li>
+            <li><label for="gameTypeCooperative"><input type="checkbox" id="gameTypeCooperative" class="gameFilter"> Coop </label></li>
             <li> Players </li>
-            <label class="slide-label">min <input class="slide" type="number"></label>
+            <label for="playersMin" class="slide-label">min <input id="playersMin" class="slide gameFilter" type="number"></label>
             <br>
-            <label class="slide-label">max<input class="slide" type="number"></label>
+            <label for="playersMax" class="slide-label">max<input id="playersMax" class="slide gameFilter" type="number"></label>
             <li> Time </li>
-            <label class="slide-label">min <input class="slide" type="number"></label>
+            <label for="timeMin" class="slide-label">min <input id="timeMin"  class="slide gameFilter" type="number"></label>
             <br>
-            <label class="slide-label">max<input class="slide" type="number"></label>
+            <label for="timeMax" class="slide-label">max<input id="timeMax" class="slide gameFilter" type="number"></label>
             <li> Age </li>
-            <label class="slide-label">min <input class="slide" type="number"></label>
+            <label for="ageMin" class="slide-label">min <input id="ageMin" class="slide gameFilter" type="number"></label>
             <br>
-            <label class="slide-label">max<input class="slide" type="number"></label>
+            <label for="ageMax" class="slide-label">max<input id="ageMax" class="slide gameFilter" type="number"></label>
             <li> Complexity </li>
-            <label class="slide-label">min <input class="slide" type="number"></label>
+            <label for="complexityMin" class="slide-label">min <input id="complexityMin"  class="slide gameFilter" type="number"></label>
             <br>
-            <label class="slide-label">max<input class="slide" type="number"></label>
+            <label for="complexityMax" class="slide-label">max<input id="complexityMax"  class="slide gameFilter" type="number"></label>
         </ul>
     </aside>
 
