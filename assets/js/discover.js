@@ -1,5 +1,21 @@
 'use strict'
 
+function createErrorSearchResults(){
+    
+    var contentPage = $("#discover-tool");
+
+    var gameFrame = document.createElement("div");
+    var gameSummary = document.createElement("p");
+    var gameTitle = document.createElement("h1");
+    
+    $(gameFrame).addClass("col-s-12 col-m-12 col-l-12 default-product");
+    $(gameTitle).text("No Games Found!").appendTo(gameFrame);
+    $(gameSummary).text("No Games Found, your search criteria is too strict!").appendTo(gameFrame);
+    $(gameFrame).appendTo(contentPage);
+    
+    return 0;
+}
+
 function createGame(json) {
     
     var contentPage = $("#discover-tool");
@@ -18,7 +34,7 @@ function createGame(json) {
     $(gameTitle).text(json.title).appendTo(gameFrame);
     $(gameLink).attr("href",product_url)
         .appendTo(gameFrame);
-    $(gameImage).addClass("col-s-12 col-m-5 col-l-5")
+    $(gameImage).addClass("col-s-12 col-m-5 col-l-5 discover-image")
         .attr("src",image).appendTo(gameLink);
     $(gameSummary).text(json.summary).appendTo(gameFrame);
     $(gameFrame).appendTo(contentPage);
@@ -126,14 +142,20 @@ function filterSearch(game,filterObj){
 function createProductSearch(json){
     $("#discover-tool").empty();
     var filterObject = createFilterObject()
+    var totalGames = 0;
     for (var key in json){
         if (json.hasOwnProperty(key)){
             var game = json[key];
             var gameFilter = filterSearch(game,filterObject);
             if (gameFilter == 1) {
                 createGame(game,filterObject);
+                totalGames = totalGames + 1;
             } 
         }
+    }
+    
+    if (totalGames == 0){
+        createErrorSearchResults();
     }
 }
 

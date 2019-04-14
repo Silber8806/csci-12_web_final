@@ -120,18 +120,18 @@ aside {
     font-family: "Quicksand"; 
     font-size: 12px;
     position: fixed;
-    margin: 0px;
+    margin: 28px 0px 0px 8px;
     padding: 0px;
     background: var(--menu-color);
-    height: calc(100% - 100px);
+    height: calc(100% - 285px);
     border: 0 solid lightgrey;
-    border-width: 0px .5px .5px 0px;
+    border-width: 0px .5px .5px .5px;
 }
 
 aside ul {
     margin: 0px;
     padding: 0px;
-    width: 95px;
+    width: 125px;
     border: 0 solid lightgrey;
     border-width: 0px 0px .5px 0px;
 }
@@ -160,11 +160,6 @@ aside ul:first-child {
     margin: 15px;
 }
 
-.discover-product {
-    border: 0 solid lightgrey; 
-    border-width: 0px 0px 0px 0px; 
-}
-
 /* main content */
 
 main {
@@ -180,6 +175,10 @@ main {
 
 #discover-tool {
     padding: 27px 0px 0px 50px;
+}
+
+.discover-image {
+    margin: 0px 15px 0px 10px;
 }
 
 main p,
