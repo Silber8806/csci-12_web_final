@@ -26,11 +26,113 @@ function createGame(json) {
     return 0;
 }
 
+function filterSearch(game,filterObj){
+    var gameType = game.category; 
+    var isSocial = filterObj.gameTypeSocial;
+    var isDungeon = filterObj.gameTypeDungeon;
+    var isCoop = filterObj.gameTypeCooperative;
+    
+    var notFiltered = 1;
+    
+    if (isCoop == false && isSocial == false && isDungeon == false) {
+        notFiltered = 1;
+    } else if ( isSocial == true && gameType == "Social") {
+        notFiltered = 1;
+    } else if ( isDungeon == true && gameType == "Dungeon Crawler") {
+        notFiltered = 1;
+    } else if ( isCoop == true && gameType == "Cooperative") {
+        notFiltered = 1;
+    } else {
+        notFiltered = 0;
+    }
+    
+    var minPlayer = game["players-min"];
+    var maxPlayer = game["players-max"];
+    var minPlayerFilter = filterObj.playersMin;
+    var maxPlayerFilter = filterObj.playersMax;
+    
+    if (minPlayerFilter == '') {
+        minPlayerFilter = 0;
+    } 
+    
+    if (maxPlayerFilter == '') {
+        maxPlayerFilter = 1000;
+    }
+    
+    if (minPlayerFilter > maxPlayer ) {
+        notFiltered = 0;
+    }
+    
+    if (maxPlayerFilter < minPlayer) {
+        notFiltered = 0;
+    }
+    
+    var minTime = game["time-min"];
+    var maxTime = game["time-max"];
+    var minTimeFilter = filterObj.timeMin;
+    var maxTimeFilter = filterObj.timeMax;
+ 
+    if (minTimeFilter == '') {
+        minTimeFilter = 0;
+    } 
+    
+    if (maxTimeFilter == '') {
+        maxTimeFilter = 1000000;
+    }
+    
+    if (minTimeFilter > maxTime ) {
+        notFiltered = 0;
+    }
+    
+    if (maxTimeFilter < minTime ) {
+        notFiltered = 0;
+    }
+    
+    var Age = game["age"];
+    var minAgeFilter = filterObj.ageMin;
+    var maxAgeFilter = filterObj.ageMax;
+    
+    if (minAgeFilter == '') {
+        minAgeFilter = 0;
+    } 
+    
+    if (maxAgeFilter == '') {
+        maxAgeFilter = 1000000;
+    }   
+    
+    if (Age < minAgeFilter || Age > maxAgeFilter) {
+        notFiltered = 0;
+    }
+    
+    var Complexity = game["complexity"];
+    var minComplexityFilter = filterObj.complexityMin;
+    var maxComplexityFilter = filterObj.complexityMax;
+    
+    if (minComplexityFilter == '') {
+        minComplexityFilter = 0;
+    } 
+    
+    if (maxComplexityFilter == '') {
+        maxComplexityFilter = 10;
+    } 
+    
+    if (Complexity < minComplexityFilter || Complexity > maxComplexityFilter) {
+        notFiltered = 0;
+    }
+    
+    return notFiltered;
+}
+
 function createProductSearch(json){
+    $("#discover-tool").empty();
+    var filterObject = createFilterObject()
     for (var key in json){
         if (json.hasOwnProperty(key)){
             var game = json[key];
-            createGame(game);
+            var gameFilter = filterSearch(game,filterObject);
+            if (gameFilter == 1) {
+                createGame(game,filterObject);
+            } 
         }
     }
 }
@@ -49,6 +151,29 @@ function getGameData() {
     xhttp.send();
 }
 
+function createFilterObject(){
+    var filterObject = {};
+    
+    $(".gameFilter").each(function(indice, opt){
+        
+        var gameFilterOption = opt.id;
+        var gameFilterValue = $("#" + opt.id).val();
+        
+        if (gameFilterValue == "on") {
+            gameFilterValue = $("#" + opt.id).is(":checked");
+        }
+        
+        filterObject[gameFilterOption] = gameFilterValue;
+    });
+    
+    return filterObject;
+}
+
+function updateGameFilter() {
+    $(".gameFilter").change(getGameData);
+}
+
 $(document).ready(function(){
     getGameData();
+    updateGameFilter();
 })
