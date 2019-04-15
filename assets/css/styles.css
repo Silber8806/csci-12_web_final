@@ -175,10 +175,35 @@ main {
 
 #discover-tool {
     padding: 27px 0px 0px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.discover-product {
+    flex: 0 0 33.3333%;
+    padding: 20px;
 }
 
 .discover-image {
     margin: 0px 15px 0px 10px;
+    width:100%;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
 }
 
 main p,
