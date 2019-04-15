@@ -26,15 +26,42 @@ function createGame(json) {
     
     var gameFrame = document.createElement("div");
     var gameTitle = document.createElement("h1");
+    
+    var gameMetrics = document.createElement("table");
+    var gameMetricsRow = document.createElement("tr");
+    var gamePlayersHeader = document.createElement("th");
+    var gameTimeHeader = document.createElement("th");
+    var gamePlayers = document.createElement("td");
+    var gameTime = document.createElement("td");
+    var gameAgeHeader = document.createElement("th");
+    var gameComplexityHeader = document.createElement("th");
+    var gameAge = document.createElement("td");
+    var gameComplexity = document.createElement("td");  
     var gameSummary = document.createElement("p");
     var gameLink = document.createElement("a");
     var gameImage = document.createElement("img");
     
-    $(gameFrame).addClass("col-s-12 col-m-6 col-l-4 discover-product");
+    $(gameMetricsRow).clone().appendTo(gameMetrics);
+    $(gamePlayersHeader).text("Players").appendTo(gameMetrics);
+    $(gameTimeHeader).text("Time").appendTo(gameMetrics);
+    $(gameMetricsRow).clone().appendTo(gameMetrics);
+    var gamePlayersText = json['players-min'] + " - " + json['players-max'] + " (best " + json['players-best'] + ")";
+    var gameTimeText = json['time-min'] + " - " + json['time-max'];
+    $(gamePlayers).text(gamePlayersText).appendTo(gameMetrics);
+    $(gameTime).text(gameTimeText).appendTo(gameMetrics); 
+    $(gameMetricsRow).clone().appendTo(gameMetrics);
+    $(gameAgeHeader).text("Age").appendTo(gameMetrics);
+    $(gameComplexityHeader).text("Complexity").appendTo(gameMetrics)
+    $(gameMetricsRow).clone().appendTo(gameMetrics);
+    $(gameAge).text(json['age'] + "+").appendTo(gameMetrics);
+    $(gameComplexity).text(json['complexity']).appendTo(gameMetrics);    
+    
+    $(gameFrame).addClass("discover-product");
     $(gameTitle).text(json.title).appendTo(gameFrame);
     $(gameLink).attr("href",product_url)
         .appendTo(gameFrame);
-    $(gameImage).addClass("col-s-12 col-m-5 col-l-5 discover-image")
+    $(gameMetrics).appendTo(gameFrame);
+    $(gameImage).addClass("discover-image")
         .attr("src",image).appendTo(gameLink);
     $(gameSummary).text(json.summary).appendTo(gameFrame);
     $(gameFrame).appendTo(contentPage);
