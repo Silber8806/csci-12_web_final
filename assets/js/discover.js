@@ -69,12 +69,6 @@ function createGame(json) {
     var gameMetrics = createGameMetrics(json)
     
     $(gameFrame).addClass("discover-game-product");
-    $(starText).addClass("discover-game-rating")
-        .text(json.rating)
-        .appendTo(gameFrame);
-    $(starImage).addClass("discover-game-stars")
-        .attr("src","/media/icons/star.png")
-        .appendTo(gameFrame);
     $(gameTitle).html(json.title).addClass("discover-game-title").appendTo(gameFrame);
     $(gameLink).attr("href",product_url)
         .addClass("discover-game-link")
