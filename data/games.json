@@ -60,7 +60,7 @@
     },
     "descent": {
         "id" : "descent",
-        "title": "Descent: Journey into Darkness",
+        "title": "Descent",
         "summary": "Descent is a dungeon crawler with an engaging highly descriptive plot, a series of modular boards and beautiful figurines.",
         "rating": 7.7,
         "category": "Dungeon Crawler",
@@ -75,6 +75,82 @@
         "gallery": [
             {"title": "Descent: Journey into Darkness - box", "href": "descent-journeys-in-the-dark.jpg"},
             {"title": "Descent: Journey into Darkness", "href": "descent-board.jpg"}
+        ]
+    },
+    "telestrations2": {
+        "id": "telestrations",
+        "title": "Telestrations",
+        "summary": "Telestrations: after dark is a risque social game where people draw pictures of words provided and pass the drawing to another player to guess the original word.  This is done in repeated fashion.",
+        "rating": 7.1,
+        "category": "Social",
+        "players-min": 4,
+        "players-max": 8,
+        "players-best": 6,
+        "time-min": 20,
+        "time-max": 30,
+        "age": 17,
+        "complexity": 1.00,
+        "main-image": "telestrations-after-dark.jpg",
+        "gallery": [
+            {"title": "telestrations: after dark edition - box", "href": "telestrations-after-dark.jpg"},
+            {"title": "telestrations: after dark - components", "href": "telestrations-images.jpg"}
+        ]
+    },
+    "telestrations3": {
+        "id": "telestrations",
+        "title": "Telestrations",
+        "summary": "Telestrations: after dark is a risque social game where people draw pictures of words provided and pass the drawing to another player to guess the original word.  This is done in repeated fashion.",
+        "rating": 7.1,
+        "category": "Social",
+        "players-min": 4,
+        "players-max": 8,
+        "players-best": 6,
+        "time-min": 20,
+        "time-max": 30,
+        "age": 17,
+        "complexity": 1.00,
+        "main-image": "telestrations-after-dark.jpg",
+        "gallery": [
+            {"title": "telestrations: after dark edition - box", "href": "telestrations-after-dark.jpg"},
+            {"title": "telestrations: after dark - components", "href": "telestrations-images.jpg"}
+        ]
+    },
+    "telestrations4": {
+        "id": "telestrations",
+        "title": "Telestrations",
+        "summary": "Telestrations: after dark is a risque social game where people draw pictures of words provided and pass the drawing to another player to guess the original word.  This is done in repeated fashion.",
+        "rating": 7.1,
+        "category": "Social",
+        "players-min": 4,
+        "players-max": 8,
+        "players-best": 6,
+        "time-min": 20,
+        "time-max": 30,
+        "age": 17,
+        "complexity": 1.00,
+        "main-image": "telestrations-after-dark.jpg",
+        "gallery": [
+            {"title": "telestrations: after dark edition - box", "href": "telestrations-after-dark.jpg"},
+            {"title": "telestrations: after dark - components", "href": "telestrations-images.jpg"}
+        ]
+    },
+    "telestrations5": {
+        "id": "telestrations",
+        "title": "Telestrations",
+        "summary": "Telestrations: after dark is a risque social game where people draw pictures of words provided and pass the drawing to another player to guess the original word.  This is done in repeated fashion.",
+        "rating": 7.1,
+        "category": "Social",
+        "players-min": 4,
+        "players-max": 8,
+        "players-best": 6,
+        "time-min": 20,
+        "time-max": 30,
+        "age": 17,
+        "complexity": 1.00,
+        "main-image": "telestrations-after-dark.jpg",
+        "gallery": [
+            {"title": "telestrations: after dark edition - box", "href": "telestrations-after-dark.jpg"},
+            {"title": "telestrations: after dark - components", "href": "telestrations-images.jpg"}
         ]
     }
 }

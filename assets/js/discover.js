@@ -8,12 +8,46 @@ function createErrorSearchResults(){
     var gameSummary = document.createElement("p");
     var gameTitle = document.createElement("h1");
     
-    $(gameFrame).addClass("col-s-12 col-m-12 col-l-12 default-product");
+    $(gameFrame).addClass("default-product");
     $(gameTitle).text("No Games Found!").appendTo(gameFrame);
     $(gameSummary).text("No Games Found, your search criteria is too strict!").appendTo(gameFrame);
     $(gameFrame).appendTo(contentPage);
     
     return 0;
+}
+
+function createGameMetrics(json){
+    
+    var gameMetrics = document.createElement("table");
+    var gameMetricsRow = document.createElement("tr");
+    var gamePlayersHeader = document.createElement("th");
+    var gameTimeHeader = document.createElement("th");
+    var gamePlayers = document.createElement("td");
+    var gameTime = document.createElement("td");
+    
+    $(gameMetrics).addClass("discover-game-stats");
+    $(gameMetricsRow).clone().appendTo(gameMetrics);
+    $(gamePlayersHeader).html("<i class=\"fas fa-users\"></i> Players").appendTo(gameMetrics);
+    $(gameTimeHeader).html("<i class=\"far fa-clock\"></i> Time").appendTo(gameMetrics);
+    $(gameMetricsRow).clone().appendTo(gameMetrics);
+    var gamePlayersText = json['players-min'] + " - " + json['players-max'];
+    var gameTimeText = json['time-min'] + " - " + json['time-max'];
+    $(gamePlayers).html(gamePlayersText).appendTo(gameMetrics);
+    $(gameTime).text(gameTimeText).appendTo(gameMetrics); 
+    
+    var gameAgeHeader = document.createElement("th");
+    var gameComplexityHeader = document.createElement("th");
+    var gameAge = document.createElement("td");
+    var gameComplexity = document.createElement("td"); 
+    
+    $(gameMetricsRow).clone().appendTo(gameMetrics);
+    $(gameAgeHeader).html("<i class=\"fas fa-child\"></i> Age").appendTo(gameMetrics);
+    $(gameComplexityHeader).html("<i class=\"fas fa-calculator\"></i> Complexity").appendTo(gameMetrics)
+    $(gameMetricsRow).clone().appendTo(gameMetrics);
+    $(gameAge).text(json['age'] + "+").appendTo(gameMetrics);
+    $(gameComplexity).text(json['complexity'] + " / 5.00").appendTo(gameMetrics); 
+    
+    return gameMetrics
 }
 
 function createGame(json) {
@@ -25,45 +59,30 @@ function createGame(json) {
     var product_url = "/pages/product.html?game=" + json.id;
     
     var gameFrame = document.createElement("div");
-    var gameTitle = document.createElement("h1");
-    
-    var gameMetrics = document.createElement("table");
-    var gameMetricsRow = document.createElement("tr");
-    var gamePlayersHeader = document.createElement("th");
-    var gameTimeHeader = document.createElement("th");
-    var gamePlayers = document.createElement("td");
-    var gameTime = document.createElement("td");
-    var gameAgeHeader = document.createElement("th");
-    var gameComplexityHeader = document.createElement("th");
-    var gameAge = document.createElement("td");
-    var gameComplexity = document.createElement("td");  
+    var gameTitle = document.createElement("h2"); 
     var gameSummary = document.createElement("p");
     var gameLink = document.createElement("a");
     var gameImage = document.createElement("img");
+    var starImage = document.createElement("img");
+    var starText = document.createElement("p");
     
-    $(gameMetricsRow).clone().appendTo(gameMetrics);
-    $(gamePlayersHeader).text("Players").appendTo(gameMetrics);
-    $(gameTimeHeader).text("Time").appendTo(gameMetrics);
-    $(gameMetricsRow).clone().appendTo(gameMetrics);
-    var gamePlayersText = json['players-min'] + " - " + json['players-max'] + " (best " + json['players-best'] + ")";
-    var gameTimeText = json['time-min'] + " - " + json['time-max'];
-    $(gamePlayers).text(gamePlayersText).appendTo(gameMetrics);
-    $(gameTime).text(gameTimeText).appendTo(gameMetrics); 
-    $(gameMetricsRow).clone().appendTo(gameMetrics);
-    $(gameAgeHeader).text("Age").appendTo(gameMetrics);
-    $(gameComplexityHeader).text("Complexity").appendTo(gameMetrics)
-    $(gameMetricsRow).clone().appendTo(gameMetrics);
-    $(gameAge).text(json['age'] + "+").appendTo(gameMetrics);
-    $(gameComplexity).text(json['complexity']).appendTo(gameMetrics);    
+    var gameMetrics = createGameMetrics(json)
     
-    $(gameFrame).addClass("discover-product");
-    $(gameTitle).text(json.title).appendTo(gameFrame);
-    $(gameLink).attr("href",product_url)
+    $(gameFrame).addClass("discover-game-product");
+    $(starText).addClass("discover-game-rating")
+        .text(json.rating)
         .appendTo(gameFrame);
-    $(gameMetrics).appendTo(gameFrame);
-    $(gameImage).addClass("discover-image")
+    $(starImage).addClass("discover-game-stars")
+        .attr("src","/media/icons/star.png")
+        .appendTo(gameFrame);
+    $(gameTitle).html(json.title).addClass("discover-game-title").appendTo(gameFrame);
+    $(gameLink).attr("href",product_url)
+        .addClass("discover-game-link")
+        .appendTo(gameFrame);
+    $(gameImage).addClass("discover-game-image")
         .attr("src",image).appendTo(gameLink);
-    $(gameSummary).text(json.summary).appendTo(gameFrame);
+    $(gameMetrics).appendTo(gameFrame);
+    $(gameSummary).text(json.summary).addClass("discover-game-summary").appendTo(gameFrame);
     $(gameFrame).appendTo(contentPage);
     
     return 0;
