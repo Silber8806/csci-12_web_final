@@ -187,25 +187,8 @@ main {
 }
 
 .discover-game-title {
+    display: inline-block;
     height: 30px;
-}
-
-.discover-game-stars {
-    display: inline;
-    margin: 0px 0px 0px 7px;
-    padding: 0px 0px 0px 1px;
-    height: 26px;
-}
-
-.discover-game-rating {
-    display: inline;
-    position: absolute;
-    text-align: center;
-    margin: 6px 0px 0px 7px;
-    color: black;
-    font-size: 14px;
-    font-family: 'Lato';
-    font-weight: bolder;
 }
 
 .discover-game-summary {
