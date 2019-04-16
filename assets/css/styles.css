@@ -101,14 +101,24 @@ nav {
     padding: 3px 0px 3px 95px;
 }
 
+#error-bar {
+    font-family: "Quicksand"; 
+    font-weight: bolder;
+    font-size: 12px;
+    background-color: var(--menu-color);
+    border-bottom: 1px solid lightgrey;
+    text-align: center;
+    color: red;
+    padding: 1px;
+    font-weight: bolder;
+}
+
 .menu-item {
     font-family: "Quicksand";  
     font-weight: lighter;
     font-size: 12px;
     display: inline-block;
     margin:auto;
-    color: var(--major-color)
-    float: left;
     margin: 2px 0px 0px 0px; 
     padding: 3px 3px 3px 3px;
     border-right: 1px dashed lightgrey;

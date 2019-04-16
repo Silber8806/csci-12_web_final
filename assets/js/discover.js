@@ -231,13 +231,32 @@ function createFilterObject(){
     return filterObject;
 }
 
+function flash_err(message) {
+    $("<p>").text(message).addClass("error-item").appendTo("#error-bar");
+    $("#error-bar")
+        .hide()
+        .delay(200)
+        .fadeIn(200)
+        .delay(2000)
+        .fadeOut(500);
+    return 0;
+}
+
 function validateInput(option,optionValue){
+    
+    var error_message = "";
+    
+    if (! $('#error-bar').is(':empty')){
+        $('#error-bar').empty();
+    }
+    
     if (option == 'gameTypeSocial' || option == 'gameTypeDungeon' || option == 'gameTypeCooperative') {
         return 1;
     }
     
     if (option == 'playersMin' || option == 'playersMax') {
         if ( optionValue < 0 || optionValue > 1000) {
+            flash_err("Player count must be between 0 and 1000!");
             return 0;
         } else {
             return 1;
@@ -246,6 +265,7 @@ function validateInput(option,optionValue){
     
     if (option == 'timeMin' || option == 'timeMax') {
         if ( optionValue < 0 || optionValue > 43800) {
+            flash_err("Time must be between 0 minutes and 43,800 minutes!");
             return 0;
         } else {
             return 1;
@@ -254,6 +274,7 @@ function validateInput(option,optionValue){
     
     if (option == 'ageMin' || option == 'ageMax') {
         if ( optionValue < 0 || optionValue > 100) {
+            flash_err("Age must be between 0 and 100 years old!");
             return 0;
         } else {
             return 1;
@@ -263,6 +284,7 @@ function validateInput(option,optionValue){
     
     if (option == 'complexityMin' || option == 'complexityMax') {
         if ( optionValue < 0 || optionValue > 5) {
+            flash_err("Complexity must be between 0 and 5!");
             return 0;
         } else {
             return 1;
@@ -274,6 +296,7 @@ function validateInput(option,optionValue){
 function updateGameFilter() {
     var previous;
     var triggerEvent;
+    
     $(".gameFilter").on('focus',function(){
         previous = this.value;
     }).change(function(){
