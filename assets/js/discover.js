@@ -31,7 +31,7 @@ function createGameMetrics(json){
     $(gameTimeHeader).html("<i class=\"far fa-clock\"></i> Time").appendTo(gameMetrics);
     $(gameMetricsRow).clone().appendTo(gameMetrics);
     var gamePlayersText = json['players-min'] + " - " + json['players-max'];
-    var gameTimeText = json['time-min'] + " - " + json['time-max'];
+    var gameTimeText = json['time-min'] + " - " + json['time-max'] + ' min';
     $(gamePlayers).html(gamePlayersText).appendTo(gameMetrics);
     $(gameTime).text(gameTimeText).appendTo(gameMetrics); 
     
@@ -231,8 +231,61 @@ function createFilterObject(){
     return filterObject;
 }
 
+function validateInput(option,optionValue){
+    if (option == 'gameTypeSocial' || option == 'gameTypeDungeon' || option == 'gameTypeCooperative') {
+        return 1;
+    }
+    
+    if (option == 'playersMin' || option == 'playersMax') {
+        if ( optionValue < 0 || optionValue > 1000) {
+            return 0;
+        } else {
+            return 1;
+        }
+    }
+    
+    if (option == 'timeMin' || option == 'timeMax') {
+        if ( optionValue < 0 || optionValue > 43800) {
+            return 0;
+        } else {
+            return 1;
+        }
+    }
+    
+    if (option == 'ageMin' || option == 'ageMax') {
+        if ( optionValue < 0 || optionValue > 100) {
+            return 0;
+        } else {
+            return 1;
+        }
+    }
+    
+    
+    if (option == 'complexityMin' || option == 'complexityMax') {
+        if ( optionValue < 0 || optionValue > 5) {
+            return 0;
+        } else {
+            return 1;
+        }
+    }
+    return 0;
+}
+
 function updateGameFilter() {
-    $(".gameFilter").change(getGameData);
+    var previous;
+    var triggerEvent;
+    $(".gameFilter").on('focus',function(){
+        previous = this.value;
+    }).change(function(){
+        var eventOption = this.id;
+        var eventValue = this.value;
+        triggerEvent = validateInput(eventOption,eventValue);
+        if (triggerEvent == 1 ){
+           getGameData(); 
+        } else {
+           this.value = previous;
+        }
+    });
 }
 
 $(document).ready(function(){

@@ -63,7 +63,7 @@ nav {
     background-color: var(--major-color);
     width: 100%;
     overflow: auto;
-    padding: 0px 0px px;
+    padding: 0px;
 }
 
 #dragon-logo {
@@ -168,6 +168,7 @@ main {
     transition: top .4s ease 0s;
     z-index: 90;
     overflow: auto;
+    min-height: calc(100vh - 170px);
 }
 
 #folio {
@@ -314,7 +315,8 @@ footer {
     }
     
     main {
-        margin: 100px 50px 0px 95px;
+        margin: 100px 40px 0px 95px;
+        min-height: calc(100vh - 160px);
     }
     
     .discover-game-image {
@@ -336,7 +338,7 @@ footer {
     }
     
     main {
-        margin: 110px 45px 0px 95px;
+        margin: 110px 35px 0px 95px;
     }
 }
 
