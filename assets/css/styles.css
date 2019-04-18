@@ -271,8 +271,20 @@ main h6 {
   max-width: 100%;
 }
 
+#product-metric {
+    grid-area: metric;
+}
+
 #product-summary {
-    grid-area: aside;
+    grid-area: summary;
+}
+
+#product-review {
+    grid-area: review;
+}
+
+#product-rule {
+    grid-area: rule;
 }
 
 #product-gallery-main {
@@ -362,17 +374,16 @@ footer {
     .container {
       display: grid;
       grid-template-columns: 20% 20% 20% 20% 20%;
-      grid-template-rows: 28px 260px 500px;
+      grid-template-rows: 30px 260px 100px auto auto auto auto;
       grid-template-areas: 
         "title title title title title"
         "image image image image image"
+        "metric metric metric metric metric"
+        "summary summary summary summary summary"
+        "review review review review review"
+        "rule rule rule rule rule"
         "content content content content content";
       height: 550px;
-    }
-    
-    #product-summary {
-        grid-area: aside;
-        display: none;
     }
     
     .container h1 {
@@ -403,19 +414,14 @@ footer {
     
     .container {
       display: grid;
-      grid-template-columns: 20% 20% auto auto auto;
+      grid-template-columns: 20% 20% auto auto auto auto;
       grid-template-rows: 35px 240px 250px;
       grid-template-areas: 
-        "title title aside aside aside"
-        "image image aside aside aside"
-        "content content content content content";
+        "title title summary summary summary summary"
+        "image image summary summary summary summary"
+        "metric metric review review rule rule";
       height: 550px;
       margin: 20px 0px 0px 0px;
-    }
-    
-    #product-summary {
-        grid-area: aside;
-        display: block;
     }
     
     #product-gallery-main {
@@ -442,20 +448,15 @@ footer {
     
     .container {
       display: grid;
-      grid-template-columns: 20% 15% 25% 20% 20%;
-      grid-template-rows: 30px 1fr 400px 1fr;
+      grid-template-columns: 20% 15% 20% 20% 20%;
+      grid-template-rows: 30px 1fr 1fr 1fr;
       grid-template-areas: 
-        "title title content content content"
-        ". . content content content"
-        "image image content content content"
-        ". . content content content";
+        "title title summary summary summary summary"
+        "image image summary summary summary summary"
+        "image image review review rule rule"
+        "metric metric review review rule rule";
       height: 550px;
       margin: 20px 0px 0px 0px;
-    }
-
-    #product-summary {
-        grid-area: aside;
-        display: none;
     }
     
     #product-gallery-main {
