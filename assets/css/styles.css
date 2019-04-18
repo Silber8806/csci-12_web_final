@@ -104,7 +104,6 @@ nav {
 #error-bar {
     font-family: "Quicksand"; 
     font-weight: bolder;
-    font-size: 12px;
     background-color: var(--menu-color);
     border-bottom: 1px solid lightgrey;
     text-align: center;
@@ -262,6 +261,28 @@ main h6 {
     color: darkred;
 }
 
+#product-title {
+  grid-area: title;
+}
+
+#product-gallery {
+  grid-area: image;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+#product-summary {
+    grid-area: aside;
+}
+
+#product-gallery-main {
+      max-height: 100%;
+}
+
+#product-content {
+  grid-area: content;
+}
+
 /* Footer Content */
 
 footer {
@@ -337,7 +358,30 @@ footer {
     .discover-game-product {
         flex: 0 0 200px;
     }
-
+    
+    .container {
+      display: grid;
+      grid-template-columns: 20% 20% 20% 20% 20%;
+      grid-template-rows: 28px 260px 500px;
+      grid-template-areas: 
+        "title title title title title"
+        "image image image image image"
+        "content content content content content";
+      height: 550px;
+    }
+    
+    #product-summary {
+        grid-area: aside;
+        display: none;
+    }
+    
+    .container h1 {
+        font-size: 30px;
+    }
+    
+    .container h2 {
+        font-size: 20px;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -350,6 +394,43 @@ footer {
     main {
         margin: 110px 35px 0px 95px;
     }
+    
+    .error-item {
+        font-size: 12px;
+        margin: 4px;
+        font-weight:bolder;
+    }
+    
+    .container {
+      display: grid;
+      grid-template-columns: 20% 20% auto auto auto;
+      grid-template-rows: 35px 240px 250px;
+      grid-template-areas: 
+        "title title aside aside aside"
+        "image image aside aside aside"
+        "content content content content content";
+      height: 550px;
+      margin: 20px 0px 0px 0px;
+    }
+    
+    #product-summary {
+        grid-area: aside;
+        display: block;
+    }
+    
+    #product-gallery-main {
+          max-height: 100%;
+          max-width: 100%;
+          object-fit: cover;
+    }
+    
+    .container h1 {
+        font-size: 30px;
+    }
+    
+    .container h2 {
+        font-size: 20px;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -357,5 +438,37 @@ footer {
     
     .mobile_only {
         display: none;         
-    }    
+    } 
+    
+    .container {
+      display: grid;
+      grid-template-columns: 20% 15% 25% 20% 20%;
+      grid-template-rows: 30px 1fr 400px 1fr;
+      grid-template-areas: 
+        "title title content content content"
+        ". . content content content"
+        "image image content content content"
+        ". . content content content";
+      height: 550px;
+      margin: 20px 0px 0px 0px;
+    }
+
+    #product-summary {
+        grid-area: aside;
+        display: none;
+    }
+    
+    #product-gallery-main {
+          max-height: 100%;
+          max-width: 100%;
+          object-fit: cover;
+    }
+    
+    .container h1 {
+        font-size: 30px;
+    }
+    
+    .container h2 {
+        font-size: 20px;
+    }
 } 

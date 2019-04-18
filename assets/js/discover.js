@@ -232,13 +232,15 @@ function createFilterObject(){
 }
 
 function flash_err(message) {
+    
     $("<p>").text(message).addClass("error-item").appendTo("#error-bar");
     $("#error-bar")
         .hide()
         .delay(200)
         .fadeIn(200)
         .delay(2000)
-        .fadeOut(500);
+        .fadeOut(500);  
+
     return 0;
 }
 

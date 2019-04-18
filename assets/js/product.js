@@ -4,8 +4,8 @@ function constructProductPage(json) {
     var current_game = getUrlParameter('game');
     var contentSection = $("#content");
     
-    var gameTitleText = json[current_game].title;
-    var gameTitle = document.createElement("h1");
+    # var gameTitleText = json[current_game].title;
+    # var gameTitle = document.createElement("h1");
     
     $(gameTitle).text(gameTitleText).appendTo(contentSection);
     
