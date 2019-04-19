@@ -9,7 +9,7 @@ function createGameMetrics(json){
     var gamePlayers = document.createElement("td");
     var gameTime = document.createElement("td");
     
-    $(gameMetrics).addClass("discover-game-stats");
+    $(gameMetrics).addClass("product-game-stats");
     $(gameMetricsRow).clone().appendTo(gameMetrics);
     $(gamePlayersHeader).html("<i class=\"fas fa-users\"></i> Players").appendTo(gameMetrics);
     $(gameTimeHeader).html("<i class=\"far fa-clock\"></i> Time").appendTo(gameMetrics);
@@ -37,9 +37,20 @@ function createGameMetrics(json){
 function constructProductPage(json) {
     var current_game = getUrlParameter('game');
     var current_game_json = json[current_game];
+    
+    var baseUrl = '/media/images/game-icons/' + current_game_json.id + '/'
+    var imageUrl = baseUrl + current_game_json["main-image"];
+    
     var contentSection = $("#content");
     
+    var gameTitle = $("<h1>").text(current_game_json["title"]).appendTo("#product-title");
+    var gameImage = $("img").attr("src",imageUrl)
+        .attr("id","product-gallery-main")
+        .appendTo("#product-gallery");
     var gameMetrics = createGameMetrics(current_game_json);
+    var gameSummary = $("<p>").text(current_game_json['summary'])
+        .appendTo("#product-summary");
+
     
     $(gameMetrics).appendTo("#product-metric");
 

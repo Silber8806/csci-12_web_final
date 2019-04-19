@@ -295,6 +295,29 @@ main h6 {
   grid-area: content;
 }
 
+.product-game-stats {
+    margin: 0px 0px 10px 20px;
+    border-collapse: collapse;
+    border: 1px solid silver;
+}
+
+.product-game-stats td, th {
+  text-align: center;
+  vertical-align: center;
+  padding: 2px 0px;
+  width: 200px;
+}
+
+.product-game-stats th {
+    background-color: var(--major-color);
+    color: var(--complement-color);
+    font-weight: lighter;
+}
+
+.product-game-stats td {
+    border-left: 1px solid silver;
+}
+
 /* Footer Content */
 
 footer {
@@ -393,6 +416,10 @@ footer {
     .container h2 {
         font-size: 20px;
     }
+    
+    .product-game-stats td, th {
+      width: 120px;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -437,6 +464,10 @@ footer {
     .container h2 {
         font-size: 20px;
     }
+    
+    .product-game-stats td, th {
+      width: 120px;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -471,5 +502,9 @@ footer {
     
     .container h2 {
         font-size: 20px;
+    }
+    
+    .product-game-stats td, th {
+      width: 160px;
     }
 } 
