@@ -38,13 +38,15 @@ p {
     font-size: 13px;
 }
 
-a:link {
+nav a:link {
+    font-family: "Quicksand"; 
+    font-size: 13px;
     color: black;
     text-decoration: none;
     background-color: inherit;
 }
 
-a:visited {
+nav a:visited {
     color: black;
     text-decoration: none;   
     background-color: inherit;
@@ -271,6 +273,10 @@ main h6 {
   max-width: 100%;
 }
 
+#product-pros-cons {
+    grid-area: pros-cons;
+}
+
 #product-metric {
     grid-area: metric;
 }
@@ -283,20 +289,16 @@ main h6 {
     grid-area: review;
 }
 
-#product-rule {
-    grid-area: rule;
+#product-vendor {
+    grid-area: vendor;
 }
 
 #product-gallery-main {
       max-height: 100%;
 }
 
-#product-content {
-  grid-area: content;
-}
-
 .product-game-stats {
-    margin: 0px 0px 10px 20px;
+    margin: 0px 0px 0px 0px;
     border-collapse: collapse;
     border: 1px solid silver;
 }
@@ -316,6 +318,34 @@ main h6 {
 
 .product-game-stats td {
     border-left: 1px solid silver;
+}
+
+#product-review a,
+#product-vendor a{
+    font-family: "Quicksand"; 
+    font-size: 13px;
+    color: blue;
+    list-style-type: none;
+    background-color: inherit;
+}
+
+
+#product-review a:link,
+#product-vendor a:link {
+    font-family: "Quicksand"; 
+    font-size: 13px;
+    color: blue;
+    list-style-type: none;
+    background-color: inherit;
+}
+
+#product-review a:visited,
+#product-vendor a:visited{
+    font-family: "Quicksand"; 
+    font-size: 13px;
+    color: darkblue;
+    list-style-type: none;  
+    background-color: inherit;
 }
 
 /* Footer Content */
@@ -397,16 +427,14 @@ footer {
     .container {
       display: grid;
       grid-template-columns: 20% 20% 20% 20% 20%;
-      grid-template-rows: 30px 260px 100px auto auto auto auto;
+      grid-template-rows: 30px 260px 140px auto auto 100px;
       grid-template-areas: 
         "title title title title title"
         "image image image image image"
         "metric metric metric metric metric"
         "summary summary summary summary summary"
         "review review review review review"
-        "rule rule rule rule rule"
-        "content content content content content";
-      height: 550px;
+        "vendor vendor vendor vendor vendor";
     }
     
     .container h1 {
@@ -416,9 +444,57 @@ footer {
     .container h2 {
         font-size: 20px;
     }
+
+    #product-metric {
+        margin: 20px 0px 0px 0px;
+    }
+
+    #product-summary {
+        background-color: var(--menu-color);
+        border: 1px solid lightgrey;
+        margin: 27px 0px 0px;
+        width: 250px;
+    }
     
+    #product-summary h2 {
+        border-bottom: 1px dashed lightgrey;
+        padding: 1px 0px 3px;
+        margin: 4px 5px 5px;
+    }
+
+    #product-review {
+        background-color: var(--menu-color);
+        margin: 20px 0px;
+        border: 1px solid lightgrey;
+        width: 250px;
+    }
+    
+    #product-review h2 {
+        border-bottom: 1px dashed lightgrey;
+        padding: 1px 0px 3px;
+        margin: 4px 5px 5px;
+    }
+    
+    #product-vendor {
+        background-color: var(--menu-color);
+        border: 1px solid lightgrey;
+        width: 250px;
+    }
+    
+    #product-vendor h2 {
+        border-bottom: 1px dashed lightgrey;
+        padding: 1px 0px 3px;
+        margin: 4px 5px 5px;
+    }
+    
+
+    #product-gallery-main {
+        margin: 10px 0px 0px 0px;
+    }
+
     .product-game-stats td, th {
-      width: 120px;
+        margin: 20px 0px 0px;
+        width: 120px;
     }
 }
 
@@ -442,11 +518,12 @@ footer {
     .container {
       display: grid;
       grid-template-columns: 20% 20% auto auto auto auto;
-      grid-template-rows: 35px 240px 250px;
+      grid-template-rows: 35px 240px 154px 108px;
       grid-template-areas: 
         "title title summary summary summary summary"
         "image image summary summary summary summary"
-        "metric metric review review rule rule";
+        "metric metric review review review review"
+         "pros-cons . vendor vendor vendor vendor";
       height: 550px;
       margin: 20px 0px 0px 0px;
     }
@@ -465,8 +542,53 @@ footer {
         font-size: 20px;
     }
     
+    #product-metric {
+        margin: 20px 0px 0px 0px;
+    }
+
+    #product-summary {
+        background-color: var(--menu-color);
+        border: 1px solid lightgrey;
+        margin: 27px 10px 0px;
+    }
+    
+    #product-summary h2 {
+        border-bottom: 1px dashed lightgrey;
+        padding: 1px 0px 3px;
+        margin: 4px 5px 5px;
+    }
+
+    #product-review {
+        background-color: var(--menu-color);
+        border: 1px solid lightgrey;
+        margin: 20px 10px 0px;
+    }
+    
+    #product-review h2 {
+        border-bottom: 1px dashed lightgrey;
+        padding: 1px 0px 3px;
+        margin: 4px 5px 5px;
+    }
+    
+    #product-vendor {
+        background-color: var(--menu-color);
+        border: 1px solid lightgrey;
+        margin: 20px 10px 0px;
+    }
+    
+    #product-vendor h2 {
+        border-bottom: 1px dashed lightgrey;
+        padding: 1px 0px 3px;
+        margin: 4px 5px 5px;
+    }
+    
     .product-game-stats td, th {
+      margin: 0px;
       width: 120px;
+    }
+    
+    #product-gallery-main {
+        margin: 0px 0px 0px 0px;
     }
 }
 
@@ -480,12 +602,12 @@ footer {
     .container {
       display: grid;
       grid-template-columns: 20% 15% 20% 20% 20%;
-      grid-template-rows: 30px 1fr 1fr 1fr;
+      grid-template-rows: 30px 2fr 2fr 1fr;
       grid-template-areas: 
         "title title summary summary summary summary"
         "image image summary summary summary summary"
-        "image image review review rule rule"
-        "metric metric review review rule rule";
+        "image image review review review review"
+        "metric metric vendor vendor vendor vendor";
       height: 550px;
       margin: 20px 0px 0px 0px;
     }
@@ -505,6 +627,6 @@ footer {
     }
     
     .product-game-stats td, th {
-      width: 160px;
+      width: 200px;
     }
 } 

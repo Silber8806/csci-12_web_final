@@ -87,16 +87,19 @@ function filterSearch(game,filterObj){
     var isSocial = filterObj.gameTypeSocial;
     var isDungeon = filterObj.gameTypeDungeon;
     var isCoop = filterObj.gameTypeCooperative;
+    var isWork = filterObj.gameTypeWorker;
     
     var notFiltered = 1;
     
-    if (isCoop == false && isSocial == false && isDungeon == false) {
+    if (isCoop == false && isSocial == false && isDungeon == false && isWork == false) {
         notFiltered = 1;
     } else if ( isSocial == true && gameType == "Social") {
         notFiltered = 1;
     } else if ( isDungeon == true && gameType == "Dungeon Crawler") {
         notFiltered = 1;
     } else if ( isCoop == true && gameType == "Cooperative") {
+        notFiltered = 1;
+    } else if ( isWork == true && gameType == "Worker") {
         notFiltered = 1;
     } else {
         notFiltered = 0;
@@ -252,7 +255,7 @@ function validateInput(option,optionValue){
         $('#error-bar').empty();
     }
     
-    if (option == 'gameTypeSocial' || option == 'gameTypeDungeon' || option == 'gameTypeCooperative') {
+    if (option == 'gameTypeSocial' || option == 'gameTypeDungeon' || option == 'gameTypeCooperative' || option == 'gameTypeWorker') {
         return 1;
     }
     
@@ -304,6 +307,7 @@ function updateGameFilter() {
     }).change(function(){
         var eventOption = this.id;
         var eventValue = this.value;
+        
         triggerEvent = validateInput(eventOption,eventValue);
         if (triggerEvent == 1 ){
            getGameData(); 

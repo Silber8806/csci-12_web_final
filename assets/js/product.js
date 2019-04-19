@@ -4,12 +4,22 @@ function createGameMetrics(json){
     
     var gameMetrics = document.createElement("table");
     var gameMetricsRow = document.createElement("tr");
+    
+    $(gameMetrics).addClass("product-game-stats");
+
+    var gameCategoryHeader = document.createElement("th");
+    var gameCategoryValue = document.createElement("td");
+    
+    $(gameMetricsRow).clone().appendTo(gameMetrics);
+    $(gameCategoryHeader).attr("colspan",2).html("<i class=\"fas fa-users\"></i> Category").appendTo(gameMetrics);
+    $(gameMetricsRow).clone().appendTo(gameMetrics);
+    $(gameCategoryValue).text(json['category']).attr("colspan",2).appendTo(gameMetrics);
+      
     var gamePlayersHeader = document.createElement("th");
     var gameTimeHeader = document.createElement("th");
     var gamePlayers = document.createElement("td");
-    var gameTime = document.createElement("td");
+    var gameTime = document.createElement("td");   
     
-    $(gameMetrics).addClass("product-game-stats");
     $(gameMetricsRow).clone().appendTo(gameMetrics);
     $(gamePlayersHeader).html("<i class=\"fas fa-users\"></i> Players").appendTo(gameMetrics);
     $(gameTimeHeader).html("<i class=\"far fa-clock\"></i> Time").appendTo(gameMetrics);
@@ -48,11 +58,32 @@ function constructProductPage(json) {
         .attr("id","product-gallery-main")
         .appendTo("#product-gallery");
     var gameMetrics = createGameMetrics(current_game_json);
-    var gameSummary = $("<p>").text(current_game_json['summary'])
+    var gameSummary = $("<p>").html(current_game_json['full-summary'])
         .appendTo("#product-summary");
-
     
-    $(gameMetrics).appendTo("#product-metric");
+    var gameReviews = $("<ul>");
+    var Reviews = current_game_json['review'];
+    
+    if (Reviews.length > 0) {
+         for (var i = 0; i < Reviews.length; i++) {
+            var ReviewEle = $("<a>").attr("href",Reviews[i].href ).text(Reviews[i].title);
+            var Review = $("<li>").append(ReviewEle).appendTo(gameReviews);
+        }  
+        gameReviews.appendTo("#product-review");
+    }
+
+    var gameVendors = $("<ul>");
+    var Vendors = current_game_json['vendor'];
+    
+    if (Vendors.length > 0) {
+        for (var i = 0; i < Vendors.length; i++) {
+            var VendorEle = $("<a>").attr("href",Vendors[i].href ).text(Vendors[i].title);
+            var Review = $("<li>").append(VendorEle).appendTo(gameVendors);
+        }
+       gameVendors.appendTo("#product-vendor");        
+    }
+
+   $(gameMetrics).appendTo("#product-metric");
 
     return 0;
 }

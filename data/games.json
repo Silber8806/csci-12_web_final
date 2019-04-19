@@ -2,18 +2,24 @@
     "gloomhaven" : {
         "id" : "gloomhaven",
         "title" : "Gloomhaven",
-        "summary": "Gloomhaven is a highly-rated dungeon crawler with 90+ scenarios, a global campaign and a dynamic combat system.",
-        "full-summary": "Gloomhaven is a highly-rated dungeon crawler with 90+ scenarios, a global campaign and a dynamic combat system.",
-        "review": "",
-        "rule": "",
+        "summary": "Gloomhaven is a content/story-rich dungeon crawler that emphazies fighting through a series of linked scenarios (90+) that progressively enhance your character and change the world.  The combat system combines 30+ enemy types with a unique card-based system that keeps the play dynamic and interesting.",
+        "full-summary": "Gloomhaven is one of the most content and detail-rich dungeon crawlers currently available.  It has over 90+ scenarios, multiple story arcs contained within a global campaign, character and campaign progression (even character retirement), unlockable content, a unique card-based combat system with a modular board and more than 30+ types of enemies with unique abilities with adjustable difficulty settings.  Gloomhaven is great for detail-driven dungeon crawler enthusiasts who crave a complexity.",
+        "review": [
+            {"title":"Arstechnia Review","href":"https://arstechnica.com/gaming/2017/04/gloomhaven-review-2017s-biggest-board-game-is-astoundingly-good/"},
+            {"title":"MeepleMountain Review","href":"https://www.meeplemountain.com/reviews/gloomhaven-review-big-box-even-bigger-game/"},
+            {"title":"BoardGameGeeks Review","href":"https://boardgamegeek.com/thread/1760237/quick-procon-review-why-gloomhaven-ultimately-didn"}
+        ],
+        "vendor": [
+         {"title":"Amazon: Gloomhaven","href":"https://www.amazon.com/Cephalofair-Games-CPH0201-Gloomhaven/dp/B01LZXVN4P"} 
+        ],
         "category": "Dungeon Crawler",
         "players-min": 1,
         "players-max": 4,
         "players-best": 3,
-        "time-min": 60,
-        "time-max": 120,
-        "age": 12,
-        "complexity": 3.79,
+        "time-min": 120,
+        "time-max": 240,
+        "age": 14,
+        "complexity": 3.95,
         "main-image": "gloomhaven.jpg",
         "gallery": [
             {"title": "gloomhaven box", "href": "gloomhaven.jpg"},
@@ -24,15 +30,24 @@
     "pandemic" : {
         "id" : "pandemic",
         "title" : "Pandemic",
-        "summary": "Pandemic is a cooperative board game where 4-6 friends work together to cure 4 global epidemics before it dooms the world!",
+        "summary": "Pandemic is a cooperative epidemology-themed board game where 2-4 players acting as healthcare professionals try to develop a vaccine for 4 viruses (by collecting 5-cards), while simultaneously preventing a global outbreak of a virus represented by color cubes on a world map.  One of the best games in the genre.",
         "category": "Cooperative",
+        "full-summary": "Gloomhaven is one of the most content and detail-rich dungeon crawlers currently available.  It has over 90+ scenarios, multiple story arcs contained within a global campaign, character and campaign progression (even character retirement), unlockable content, a unique card-based combat system with a modular board and more than 30+ types of enemies with unique abilities with adjustable difficulty settings.  Gloomhaven is great for detail-driven dungeon crawler enthusiasts who crave a complexity.",
+        "review": [
+            {"title":"Arstechnia Review","href":"https://arstechnica.com/gaming/2017/04/gloomhaven-review-2017s-biggest-board-game-is-astoundingly-good/"},
+            {"title":"MeepleMountain Review","href":"https://www.meeplemountain.com/reviews/gloomhaven-review-big-box-even-bigger-game/"},
+            {"title":"BoardGameGeeks Review","href":"https://boardgamegeek.com/thread/1760237/quick-procon-review-why-gloomhaven-ultimately-didn"}
+        ],
+        "vendor": [
+         {"title":"Amazon: Gloomhaven","href":"https://www.amazon.com/Cephalofair-Games-CPH0201-Gloomhaven/dp/B01LZXVN4P"} 
+        ],
         "players-min": 2,
         "players-max": 4,
         "players-best": 4,
-        "time-min": 45,
-        "time-max": 45,
+        "time-min": 60,
+        "time-max": 90,
         "age": 8,
-        "complexity": 2.42,
+        "complexity": 2.45,
         "main-image": "pandemic.jpg",
         "gallery": [
             {"title": "pandemic box", "href": "pandemic.jpg"},
@@ -43,15 +58,24 @@
     "telestrations": {
         "id": "telestrations",
         "title": "Telestrations",
-        "summary": "Telestrations: after dark is a risque social game where people draw pictures of words provided and pass the drawing to another player to guess the original word.  This is done in repeated fashion.",
+        "summary": "Telestrations: after dark is a risque social game where players are given a word and are expected to draw it.  Players than alternate between guessing what was drawn and then passing it on to the next person to draw the most recent guess.  If the last guess matches the original word, the original artist wins.  Fun social game.",
+        "full-summary": "Gloomhaven is one of the most content and detail-rich dungeon crawlers currently available.  It has over 90+ scenarios, multiple story arcs contained within a global campaign, character and campaign progression (even character retirement), unlockable content, a unique card-based combat system with a modular board and more than 30+ types of enemies with unique abilities with adjustable difficulty settings.  Gloomhaven is great for detail-driven dungeon crawler enthusiasts who crave a complexity.",
+        "review": [
+            {"title":"Arstechnia Review","href":"https://arstechnica.com/gaming/2017/04/gloomhaven-review-2017s-biggest-board-game-is-astoundingly-good/"},
+            {"title":"MeepleMountain Review","href":"https://www.meeplemountain.com/reviews/gloomhaven-review-big-box-even-bigger-game/"},
+            {"title":"BoardGameGeeks Review","href":"https://boardgamegeek.com/thread/1760237/quick-procon-review-why-gloomhaven-ultimately-didn"}
+        ],
+        "vendor": [
+         {"title":"Amazon: Gloomhaven","href":"https://www.amazon.com/Cephalofair-Games-CPH0201-Gloomhaven/dp/B01LZXVN4P"} 
+        ],
         "category": "Social",
         "players-min": 4,
         "players-max": 8,
         "players-best": 6,
-        "time-min": 20,
-        "time-max": 30,
+        "time-min": 30,
+        "time-max": 45,
         "age": 17,
-        "complexity": 1.00,
+        "complexity": 1.05,
         "main-image": "telestrations-after-dark.jpg",
         "gallery": [
             {"title": "telestrations: after dark edition - box", "href": "telestrations-after-dark.jpg"},
@@ -61,88 +85,79 @@
     "descent": {
         "id" : "descent",
         "title": "Descent",
-        "summary": "Descent is a dungeon crawler with an engaging highly descriptive plot, a series of modular boards and beautiful figurines.",
+        "summary": "Descent: Journey into Darkness is a Dungeon crawler that emphasizes dice-based combat on a modular board.  Featuring a rich storyline, beautiful figurines and interesting dice combat mechanics with dozens of enemies, Descent: Journey into Darkness is a great addition to anyone that enjoys dungeon crawling board games.",
         "category": "Dungeon Crawler",
+        "full-summary": "Gloomhaven is one of the most content and detail-rich dungeon crawlers currently available.  It has over 90+ scenarios, multiple story arcs contained within a global campaign, character and campaign progression (even character retirement), unlockable content, a unique card-based combat system with a modular board and more than 30+ types of enemies with unique abilities with adjustable difficulty settings.  Gloomhaven is great for detail-driven dungeon crawler enthusiasts who crave a complexity.",
+        "review": [
+            {"title":"Arstechnia Review","href":"https://arstechnica.com/gaming/2017/04/gloomhaven-review-2017s-biggest-board-game-is-astoundingly-good/"},
+            {"title":"MeepleMountain Review","href":"https://www.meeplemountain.com/reviews/gloomhaven-review-big-box-even-bigger-game/"},
+            {"title":"BoardGameGeeks Review","href":"https://boardgamegeek.com/thread/1760237/quick-procon-review-why-gloomhaven-ultimately-didn"}
+        ],
+        "vendor": [
+         {"title":"Amazon: Gloomhaven","href":"https://www.amazon.com/Cephalofair-Games-CPH0201-Gloomhaven/dp/B01LZXVN4P"} 
+        ],
         "players-min": 2,
         "players-max": 5,
         "players-best": 5,
         "time-min": 120,
-        "time-max": 120,
-        "age": 14,
-        "complexity": 3.21,
+        "time-max": 180,
+        "age": 12,
+        "complexity": 3.25,
         "main-image": "descent-journeys-in-the-dark.jpg",
         "gallery": [
             {"title": "Descent: Journey into Darkness - box", "href": "descent-journeys-in-the-dark.jpg"},
             {"title": "Descent: Journey into Darkness", "href": "descent-board.jpg"}
         ]
     },
-    "telestrations2": {
-        "id": "telestrations",
-        "title": "Telestrations",
-        "summary": "Telestrations: after dark is a risque social game where people draw pictures of words provided and pass the drawing to another player to guess the original word.  This is done in repeated fashion.",
-        "category": "Social",
-        "players-min": 4,
-        "players-max": 8,
-        "players-best": 6,
-        "time-min": 20,
-        "time-max": 30,
-        "age": 17,
-        "complexity": 1.00,
-        "main-image": "telestrations-after-dark.jpg",
+    "lords-of-waterdeep": {
+        "id": "lords-of-waterdeep",
+        "title": "Lords of Waterdeep",
+        "summary": "Lords of Waterdeep is a worker replacement game (economic) where a player represents the owner of a Tavern or Guild seeking to dominate the political landscape of a famous Dungeon & Dragon city Waterdeep by using agents to recruit heroes (resources) to complete tasks (quests).  The player with the most points at the end of the 8 rounds wins.",
+        "full-summary": "Gloomhaven is one of the most content and detail-rich dungeon crawlers currently available.  It has over 90+ scenarios, multiple story arcs contained within a global campaign, character and campaign progression (even character retirement), unlockable content, a unique card-based combat system with a modular board and more than 30+ types of enemies with unique abilities with adjustable difficulty settings.  Gloomhaven is great for detail-driven dungeon crawler enthusiasts who crave a complexity.",
+        "review": [
+            {"title":"Arstechnia Review","href":"https://arstechnica.com/gaming/2017/04/gloomhaven-review-2017s-biggest-board-game-is-astoundingly-good/"},
+            {"title":"MeepleMountain Review","href":"https://www.meeplemountain.com/reviews/gloomhaven-review-big-box-even-bigger-game/"},
+            {"title":"BoardGameGeeks Review","href":"https://boardgamegeek.com/thread/1760237/quick-procon-review-why-gloomhaven-ultimately-didn"}
+        ],
+        "vendor": [
+         {"title":"Amazon: Gloomhaven","href":"https://www.amazon.com/Cephalofair-Games-CPH0201-Gloomhaven/dp/B01LZXVN4P"} 
+        ],
+        "category": "Worker",
+        "players-min": 2,
+        "players-max": 5,
+        "players-best": 3,
+        "time-min": 60,
+        "time-max": 120,
+        "age": 13,
+        "complexity": 2.55,
+        "main-image": "lords-of-waterdeep.jpg",
         "gallery": [
             {"title": "telestrations: after dark edition - box", "href": "telestrations-after-dark.jpg"},
             {"title": "telestrations: after dark - components", "href": "telestrations-images.jpg"}
         ]
     },
-    "telestrations3": {
-        "id": "telestrations",
-        "title": "Telestrations",
-        "summary": "Telestrations: after dark is a risque social game where people draw pictures of words provided and pass the drawing to another player to guess the original word.  This is done in repeated fashion.",
+    "codenames": {
+        "id": "codenames",
+        "title": "Codenames",
+        "summary": "Codenames is a espionage-themed game of deduction where pairs of players act as secret agent and information analyst trying to communicate through code words.  The information analyst has to guess what subset of 25 words represented as a 5x5 grid of cards belong to their team.  The secret agent provides 1-word hints to assist the information analyst with the words to select.  First pair to get all their words wins.",
+        "full-summary": "Gloomhaven is one of the most content and detail-rich dungeon crawlers currently available.  It has over 90+ scenarios, multiple story arcs contained within a global campaign, character and campaign progression (even character retirement), unlockable content, a unique card-based combat system with a modular board and more than 30+ types of enemies with unique abilities with adjustable difficulty settings.  Gloomhaven is great for detail-driven dungeon crawler enthusiasts who crave a complexity.",
+        "review": [
+            {"title":"Arstechnia Review","href":"https://arstechnica.com/gaming/2017/04/gloomhaven-review-2017s-biggest-board-game-is-astoundingly-good/"},
+            {"title":"MeepleMountain Review","href":"https://www.meeplemountain.com/reviews/gloomhaven-review-big-box-even-bigger-game/"},
+            {"title":"BoardGameGeeks Review","href":"https://boardgamegeek.com/thread/1760237/quick-procon-review-why-gloomhaven-ultimately-didn"}
+        ],
+        "vendor": [
+         {"title":"Amazon: Gloomhaven","href":"https://www.amazon.com/Cephalofair-Games-CPH0201-Gloomhaven/dp/B01LZXVN4P"} 
+        ],
         "category": "Social",
-        "players-min": 4,
+        "players-min": 2,
         "players-max": 8,
         "players-best": 6,
         "time-min": 20,
-        "time-max": 30,
-        "age": 17,
-        "complexity": 1.00,
-        "main-image": "telestrations-after-dark.jpg",
-        "gallery": [
-            {"title": "telestrations: after dark edition - box", "href": "telestrations-after-dark.jpg"},
-            {"title": "telestrations: after dark - components", "href": "telestrations-images.jpg"}
-        ]
-    },
-    "telestrations4": {
-        "id": "telestrations",
-        "title": "Telestrations",
-        "summary": "Telestrations: after dark is a risque social game where people draw pictures of words provided and pass the drawing to another player to guess the original word.  This is done in repeated fashion.",
-        "category": "Social",
-        "players-min": 4,
-        "players-max": 8,
-        "players-best": 6,
-        "time-min": 20,
-        "time-max": 30,
-        "age": 17,
-        "complexity": 1.00,
-        "main-image": "telestrations-after-dark.jpg",
-        "gallery": [
-            {"title": "telestrations: after dark edition - box", "href": "telestrations-after-dark.jpg"},
-            {"title": "telestrations: after dark - components", "href": "telestrations-images.jpg"}
-        ]
-    },
-    "telestrations5": {
-        "id": "telestrations",
-        "title": "Telestrations",
-        "summary": "Telestrations: after dark is a risque social game where people draw pictures of words provided and pass the drawing to another player to guess the original word.  This is done in repeated fashion.",
-        "category": "Social",
-        "players-min": 4,
-        "players-max": 8,
-        "players-best": 6,
-        "time-min": 20,
-        "time-max": 30,
-        "age": 17,
-        "complexity": 1.00,
-        "main-image": "telestrations-after-dark.jpg",
+        "time-max": 40,
+        "age": 14,
+        "complexity": 1.35,
+        "main-image": "codenames.jpg",
         "gallery": [
             {"title": "telestrations: after dark edition - box", "href": "telestrations-after-dark.jpg"},
             {"title": "telestrations: after dark - components", "href": "telestrations-images.jpg"}
