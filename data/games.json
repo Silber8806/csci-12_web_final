@@ -5,9 +5,9 @@
         "summary": "Gloomhaven is a content/story-rich dungeon crawler that emphazies fighting through a series of linked scenarios (90+) that progressively enhance your character and change the world.  The combat system combines 30+ enemy types with a unique card-based system that keeps the play dynamic and interesting.",
         "full-summary": "Gloomhaven is one of the most content and detail-rich dungeon crawlers currently available.  It has over 90+ scenarios, multiple story arcs contained within a global campaign, character and campaign progression (even character retirement), unlockable content, a unique card-based combat system with a modular board and more than 30+ types of enemies with unique abilities with adjustable difficulty settings.  Gloomhaven is great for detail-driven dungeon crawler enthusiasts who crave a complexity.",
         "review": [
+            {"title":"YouTube Review","href":"https://www.youtube.com/watch?v=8FOV8KPfdV4"},
             {"title":"Arstechnia Review","href":"https://arstechnica.com/gaming/2017/04/gloomhaven-review-2017s-biggest-board-game-is-astoundingly-good/"},
-            {"title":"MeepleMountain Review","href":"https://www.meeplemountain.com/reviews/gloomhaven-review-big-box-even-bigger-game/"},
-            {"title":"BoardGameGeeks Review","href":"https://boardgamegeek.com/thread/1760237/quick-procon-review-why-gloomhaven-ultimately-didn"}
+            {"title":"Beasts of War Review","href":"https://www.beastsofwar.com/board-games/gloomhaven-review/"}
         ],
         "vendor": [
          {"title":"Amazon: Gloomhaven","href":"https://www.amazon.com/Cephalofair-Games-CPH0201-Gloomhaven/dp/B01LZXVN4P"} 
@@ -32,14 +32,14 @@
         "title" : "Pandemic",
         "summary": "Pandemic is a cooperative epidemology-themed board game where 2-4 players acting as healthcare professionals try to develop a vaccine for 4 viruses (by collecting 5-cards), while simultaneously preventing a global outbreak of a virus represented by color cubes on a world map.  One of the best games in the genre.",
         "category": "Cooperative",
-        "full-summary": "Gloomhaven is one of the most content and detail-rich dungeon crawlers currently available.  It has over 90+ scenarios, multiple story arcs contained within a global campaign, character and campaign progression (even character retirement), unlockable content, a unique card-based combat system with a modular board and more than 30+ types of enemies with unique abilities with adjustable difficulty settings.  Gloomhaven is great for detail-driven dungeon crawler enthusiasts who crave a complexity.",
+        "full-summary": "Pandemic is a cooperative epidemology-themed board game where 2-4 players acting as healthcare professionals work in concert to develop a vaccine for 4 viruses (by collecting 5-cards), while simultaneously preventing a global outbreak of the same viruses.  Each turn players draw a card representing cure information (5 of the same kind cures a virus), travel on a board representing the world and treat (cubes) people infected by one of the 4 viruses.  Once everyone has played a turn, the virus spreads.",
         "review": [
-            {"title":"Arstechnia Review","href":"https://arstechnica.com/gaming/2017/04/gloomhaven-review-2017s-biggest-board-game-is-astoundingly-good/"},
-            {"title":"MeepleMountain Review","href":"https://www.meeplemountain.com/reviews/gloomhaven-review-big-box-even-bigger-game/"},
-            {"title":"BoardGameGeeks Review","href":"https://boardgamegeek.com/thread/1760237/quick-procon-review-why-gloomhaven-ultimately-didn"}
+            {"title":"YouTube Review","href":"https://www.youtube.com/watch?v=UIpoDcPj8VU"},
+            {"title":"Arstechnia Review (Legacy Expansion)","href":"https://arstechnica.com/gaming/2016/03/pandemic-legacy-is-the-best-board-game-ever-but-is-it-fun/"},
+            {"title":"One Board Family Review","href":"http://oneboardfamily.com/review-pandemic/"}
         ],
         "vendor": [
-         {"title":"Amazon: Gloomhaven","href":"https://www.amazon.com/Cephalofair-Games-CPH0201-Gloomhaven/dp/B01LZXVN4P"} 
+         {"title":"Amazon: Pandemic","href":"https://www.amazon.com/Z-Man-Games-ZM7101-Pandemic/dp/B00A2HD40E"} 
         ],
         "players-min": 2,
         "players-max": 4,
@@ -59,14 +59,14 @@
         "id": "telestrations",
         "title": "Telestrations",
         "summary": "Telestrations: after dark is a risque social game where players are given a word and are expected to draw it.  Players than alternate between guessing what was drawn and then passing it on to the next person to draw the most recent guess.  If the last guess matches the original word, the original artist wins.  Fun social game.",
-        "full-summary": "Gloomhaven is one of the most content and detail-rich dungeon crawlers currently available.  It has over 90+ scenarios, multiple story arcs contained within a global campaign, character and campaign progression (even character retirement), unlockable content, a unique card-based combat system with a modular board and more than 30+ types of enemies with unique abilities with adjustable difficulty settings.  Gloomhaven is great for detail-driven dungeon crawler enthusiasts who crave a complexity.",
+        "full-summary": "Telestrations: After Dark is a risque social card game where players are given a word and are expected to draw it on a handheld eraser board.  The player than passes the board to the player on the left, who guesses what the drawing represents.  The next player to the left then tries to draw the newly guessed word.  This continues until everyone has guessed or drawn a word.  If the original word matches the last guess, the original artist wins.",
         "review": [
-            {"title":"Arstechnia Review","href":"https://arstechnica.com/gaming/2017/04/gloomhaven-review-2017s-biggest-board-game-is-astoundingly-good/"},
-            {"title":"MeepleMountain Review","href":"https://www.meeplemountain.com/reviews/gloomhaven-review-big-box-even-bigger-game/"},
-            {"title":"BoardGameGeeks Review","href":"https://boardgamegeek.com/thread/1760237/quick-procon-review-why-gloomhaven-ultimately-didn"}
+            {"title":"YouTube Review","href":"https://www.youtube.com/watch?v=l33L3-HSXw4"},
+            {"title":"Gaming Bits Review","href":"https://jlnelson73.wordpress.com/2016/12/12/telestrations-after-dark/"},
+            {"title":"The Op Review","href":"https://theop.games/2019/02/telestrations-after-darkbecause-everything-is-better-after-dark/"}
         ],
         "vendor": [
-         {"title":"Amazon: Gloomhaven","href":"https://www.amazon.com/Cephalofair-Games-CPH0201-Gloomhaven/dp/B01LZXVN4P"} 
+         {"title":"Amazon: Telestrations After Dark","href":"https://www.amazon.com/USAopoly-Telestrations-After-Dark-Board/dp/B00V42YPKO/ref=sr_1_1?keywords=Telestrations+after+dark&qid=1555726675&s=toys-and-games&sr=1-1"} 
         ],
         "category": "Social",
         "players-min": 4,
@@ -87,14 +87,14 @@
         "title": "Descent",
         "summary": "Descent: Journey into Darkness is a Dungeon crawler that emphasizes dice-based combat on a modular board.  Featuring a rich storyline, beautiful figurines and interesting dice combat mechanics with dozens of enemies, Descent: Journey into Darkness is a great addition to anyone that enjoys dungeon crawling board games.",
         "category": "Dungeon Crawler",
-        "full-summary": "Gloomhaven is one of the most content and detail-rich dungeon crawlers currently available.  It has over 90+ scenarios, multiple story arcs contained within a global campaign, character and campaign progression (even character retirement), unlockable content, a unique card-based combat system with a modular board and more than 30+ types of enemies with unique abilities with adjustable difficulty settings.  Gloomhaven is great for detail-driven dungeon crawler enthusiasts who crave a complexity.",
+        "full-summary": "Descent: Journey into Darkness is a Dungeon crawler with a modular board, an extensive story-based campaign, beautiful figurines, a dice-based combat system with special abilities and equipment.  Players level up and add new equipment cards and abilities.  Descent is unique in that the Dungeon Master or enemies are controlled by an opponent, who is interested in defeating the party.",
         "review": [
-            {"title":"Arstechnia Review","href":"https://arstechnica.com/gaming/2017/04/gloomhaven-review-2017s-biggest-board-game-is-astoundingly-good/"},
-            {"title":"MeepleMountain Review","href":"https://www.meeplemountain.com/reviews/gloomhaven-review-big-box-even-bigger-game/"},
-            {"title":"BoardGameGeeks Review","href":"https://boardgamegeek.com/thread/1760237/quick-procon-review-why-gloomhaven-ultimately-didn"}
+            {"title":"YouTube Review","href":"https://www.youtube.com/watch?v=toEWPyjnLjA"},
+            {"title":"YouTube Review","href":"https://www.youtube.com/watch?v=Ir9_b6HMyc8"},
+            {"title":"The Crits Happen Review","href":"https://www.critshappen.net/2012/07/29/critical-review-descent-journeys-in-the-dark-2nd-edition/"}
         ],
         "vendor": [
-         {"title":"Amazon: Gloomhaven","href":"https://www.amazon.com/Cephalofair-Games-CPH0201-Gloomhaven/dp/B01LZXVN4P"} 
+         {"title":"Amazon: Descent: Journeys in the dark","href":"https://www.amazon.com/Fantasy-Flight-Games-Descent-Journeys/dp/1616611898/ref=sr_1_1?keywords=Descent&qid=1555726738&s=toys-and-games&sr=1-1"} 
         ],
         "players-min": 2,
         "players-max": 5,
@@ -113,14 +113,14 @@
         "id": "lords-of-waterdeep",
         "title": "Lords of Waterdeep",
         "summary": "Lords of Waterdeep is a worker replacement game (economic) where a player represents the owner of a Tavern or Guild seeking to dominate the political landscape of a famous Dungeon & Dragon city Waterdeep by using agents to recruit heroes (resources) to complete tasks (quests).  The player with the most points at the end of the 8 rounds wins.",
-        "full-summary": "Gloomhaven is one of the most content and detail-rich dungeon crawlers currently available.  It has over 90+ scenarios, multiple story arcs contained within a global campaign, character and campaign progression (even character retirement), unlockable content, a unique card-based combat system with a modular board and more than 30+ types of enemies with unique abilities with adjustable difficulty settings.  Gloomhaven is great for detail-driven dungeon crawler enthusiasts who crave a complexity.",
+        "full-summary": "Lords of Waterdeep is a worker replacement game.  Players act as Lords vying for power in Waterdeep.  Lords gain influence and power by completing Dungeon & Dragon inspired quests using heroes and gold acquired through the actions of your 3 agents.  Agents acquire these resources by using spaces (based on D&D locations).  The strategy and fun comes from optimimally placing your agents and blocking your opponent from gaining resources.",
         "review": [
-            {"title":"Arstechnia Review","href":"https://arstechnica.com/gaming/2017/04/gloomhaven-review-2017s-biggest-board-game-is-astoundingly-good/"},
-            {"title":"MeepleMountain Review","href":"https://www.meeplemountain.com/reviews/gloomhaven-review-big-box-even-bigger-game/"},
-            {"title":"BoardGameGeeks Review","href":"https://boardgamegeek.com/thread/1760237/quick-procon-review-why-gloomhaven-ultimately-didn"}
+            {"title":"YouTube Review","href":"https://www.youtube.com/watch?v=Eo7ui-fO4fg"},
+            {"title":"Board Game Quest Review","href":"https://www.boardgamequest.com/lords-of-waterdeep-board-game-review/"},
+            {"title":"Critical Board Gamer Review","href":"http://criticalboardgamer.blogspot.com/2013/09/lords-of-waterdeep-review.html"}
         ],
         "vendor": [
-         {"title":"Amazon: Gloomhaven","href":"https://www.amazon.com/Cephalofair-Games-CPH0201-Gloomhaven/dp/B01LZXVN4P"} 
+         {"title":"Amazon: Lords of Waterdeep","href":"https://www.amazon.com/Lords-Waterdeep-Dungeons-Dragons-Board/dp/0786959916/ref=sr_1_1?keywords=lords+of+waterdeep&qid=1555726819&s=toys-and-games&sr=1-1"} 
         ],
         "category": "Worker",
         "players-min": 2,
@@ -140,14 +140,14 @@
         "id": "codenames",
         "title": "Codenames",
         "summary": "Codenames is a espionage-themed game of deduction where pairs of players act as secret agent and information analyst trying to communicate through code words.  The information analyst has to guess what subset of 25 words represented as a 5x5 grid of cards belong to their team.  The secret agent provides 1-word hints to assist the information analyst with the words to select.  First pair to get all their words wins.",
-        "full-summary": "Gloomhaven is one of the most content and detail-rich dungeon crawlers currently available.  It has over 90+ scenarios, multiple story arcs contained within a global campaign, character and campaign progression (even character retirement), unlockable content, a unique card-based combat system with a modular board and more than 30+ types of enemies with unique abilities with adjustable difficulty settings.  Gloomhaven is great for detail-driven dungeon crawler enthusiasts who crave a complexity.",
+        "full-summary": "Codenames is a game of deduction where players work in teams of 2.  One player represents a secret agent who uses codenames to communicate with the other player (analyst).  The second player tries to guess the secret agents set of codenames.  Codenames are presented to all players as a set of 25 cards with single words on it arranged in a 5x5 grid. Each team has only a small subset of the words.  The secret agent uses a single word to help the analyst find all the codenames.  Guessing all codenames leads to victory!",
         "review": [
-            {"title":"Arstechnia Review","href":"https://arstechnica.com/gaming/2017/04/gloomhaven-review-2017s-biggest-board-game-is-astoundingly-good/"},
-            {"title":"MeepleMountain Review","href":"https://www.meeplemountain.com/reviews/gloomhaven-review-big-box-even-bigger-game/"},
-            {"title":"BoardGameGeeks Review","href":"https://boardgamegeek.com/thread/1760237/quick-procon-review-why-gloomhaven-ultimately-didn"}
+            {"title":"YouTube Review","href":"https://www.youtube.com/watch?v=3UEbi7GWMPg"},
+            {"title":"Shut up and Sit Down Review","href":"https://www.shutupandsitdown.com/review-codenames/"},
+            {"title":"The Board Game Family Review","href":"https://www.theboardgamefamily.com/2016/01/codenames-party-game-review/"}
         ],
         "vendor": [
-         {"title":"Amazon: Gloomhaven","href":"https://www.amazon.com/Cephalofair-Games-CPH0201-Gloomhaven/dp/B01LZXVN4P"} 
+         {"title":"Amazon: Codenames","href":"https://www.amazon.com/Czech-Games-00031CGE-Codenames/dp/B014Q1XX9S/ref=sr_1_2?keywords=codenames&qid=1555726859&s=toys-and-games&sr=1-2"} 
         ],
         "category": "Social",
         "players-min": 2,

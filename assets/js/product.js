@@ -11,7 +11,7 @@ function createGameMetrics(json){
     var gameCategoryValue = document.createElement("td");
     
     $(gameMetricsRow).clone().appendTo(gameMetrics);
-    $(gameCategoryHeader).attr("colspan",2).html("<i class=\"fas fa-users\"></i> Category").appendTo(gameMetrics);
+    $(gameCategoryHeader).attr("colspan",2).html("<i class=\"fas fa-layer-group\"></i> Category").appendTo(gameMetrics);
     $(gameMetricsRow).clone().appendTo(gameMetrics);
     $(gameCategoryValue).text(json['category']).attr("colspan",2).appendTo(gameMetrics);
       
@@ -120,6 +120,5 @@ function getGameData() {
 $(document).ready(function(){
     var err
     var errUrl
-    
     getGameData();
 })
