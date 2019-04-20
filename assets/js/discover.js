@@ -247,6 +247,25 @@ function flash_err(message) {
     return 0;
 }
 
+function testMinMaxRule (filterToTest){
+    var filterMin =  parseInt($("#"+filterToTest+"Min").val());
+    var filterMax =  parseInt($("#"+filterToTest+"Max").val());
+    
+    if (filterMin == "") {
+        filterMin = -1;
+    }
+    
+    if (filterMax == "") {
+        filterMax = 43800;
+    }
+    
+    if (filterMin > filterMax) {
+        flash_err(filterToTest + " min can't be greater than " + filterToTest + " max!")
+        return 0;
+    }    
+    return 1;
+}
+
 function validateInput(option,optionValue){
     
     var error_message = "";
@@ -257,6 +276,15 @@ function validateInput(option,optionValue){
     
     if (option == 'gameTypeSocial' || option == 'gameTypeDungeon' || option == 'gameTypeCooperative' || option == 'gameTypeWorker') {
         return 1;
+    }
+    
+    var filterTypes = ['players','time','age','complexity'];
+    
+    for (var i = 0; i < filterTypes.length; i++){
+        var testResult = testMinMaxRule(filterTypes[i]);
+        if (testResult == 0) {
+            return 0;
+        }
     }
     
     if (option == 'playersMin' || option == 'playersMax') {
