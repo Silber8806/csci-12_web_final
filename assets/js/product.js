@@ -54,7 +54,7 @@ function constructProductPage(json) {
     var contentSection = $("#content");
     
     var gameTitle = $("<h1>").text(current_game_json["title"]).appendTo("#product-title");
-    var gameImage = $("img").attr("src",imageUrl)
+    var gameImage = $("<img>").attr("src",imageUrl)
         .attr("id","product-gallery-main")
         .appendTo("#product-gallery");
     var gameMetrics = createGameMetrics(current_game_json);
