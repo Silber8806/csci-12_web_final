@@ -2,9 +2,11 @@
 <html lang="en">
 
 <head>
-    <title> Boardemic.com - Board Game Search </title>
+    <meta charset="utf-8"/>
+    <title> Boardemic.com - Discover </title>
     <link rel="stylesheet" href="/assets/css/styles.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
 </head>
 
@@ -32,41 +34,42 @@
     </nav>
 
     <aside>
-        <ul id="filterConditions">
-            <li> <i class="fas fa-layer-group"></i> Categories </li>
-            <li><label for="gameTypeSocial"><input type="checkbox" id="gameTypeSocial" class="gameFilter"> Casual </label></li>
-            <li><label for="gameTypeDungeon"><input type="checkbox" id="gameTypeDungeon" class="gameFilter"> Dungeon </label></li>
-            <li><label for="gameTypeCooperative"><input type="checkbox" id="gameTypeCooperative" class="gameFilter"> Cooperative </label></li>
-            <li><label for="gameTypeWorker"><input type="checkbox" id="gameTypeWorker" class="gameFilter"> Economic </label></li>
-            <li> <i class="fas fa-users"></i> Players </li>
+        <form id="filterConditions">
+            <div class="filter-box"> <i class="fas fa-layer-group"></i> Categories </div>
+            <div class="filter-box"><label for="gameTypeSocial"><input type="checkbox" id="gameTypeSocial" class="gameFilter"> Casual </label></div>
+            <div class="filter-box"><label for="gameTypeDungeon"><input type="checkbox" id="gameTypeDungeon" class="gameFilter"> Dungeon </label></div>
+            <div class="filter-box"><label for="gameTypeCooperative"><input type="checkbox" id="gameTypeCooperative" class="gameFilter"> Cooperative </label></div>
+            <div class="filter-box"><label for="gameTypeWorker"><input type="checkbox" id="gameTypeWorker" class="gameFilter"> Economic </label></div>
+            <div class="filter-box"> <i class="fas fa-users"></i> Players </div>
             <label for="playersMin" class="slide-label">min <input id="playersMin" class="slide gameFilter" type="number"></label>
             <br>
             <label for="playersMax" class="slide-label">max<input id="playersMax" class="slide gameFilter" type="number"></label>
-            <li> <i class="far fa-clock"></i> Time </li>
+            <div class="filter-box"> <i class="far fa-clock"></i> Time </div>
             <label for="timeMin" class="slide-label">min <input id="timeMin"  class="slide gameFilter" type="number"></label>
             <br>
             <label for="timeMax" class="slide-label">max<input id="timeMax" class="slide gameFilter" type="number"></label>
-            <li> <i class="fas fa-child"></i> Age </li>
+            <div class="filter-box"> <i class="fas fa-child"></i> Age </div>
             <label for="ageMin" class="slide-label">min <input id="ageMin" class="slide gameFilter" type="number"></label>
             <br>
             <label for="ageMax" class="slide-label">max<input id="ageMax" class="slide gameFilter" type="number"></label>
-            <li> <i class="fas fa-calculator"></i> Complexity </li>
+            <div class="filter-box"> <i class="fas fa-calculator"></i> Complexity </div>
             <label for="complexityMin" class="slide-label">min <input id="complexityMin"  class="slide gameFilter" type="number"></label>
             <br>
             <label for="complexityMax" class="slide-label">max<input id="complexityMax"  class="slide gameFilter" type="number"></label>
-        </ul>
+        </form>
     </aside>
 
     <main>
-        <section id="discover-tool"> </section>
+        <div id="discover-tool"> </div>
     </main>
 
     <footer>
         <p> this is some content...</p>
     </footer>
     
-    <script type="text/javascript" src="/assets/vendor/js/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="/assets/js/events.js"></script>
-    <script type="text/javascript" src="/assets/js/discover.js"></script>
+    <script src="/assets/vendor/js/jquery-3.3.1.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="/assets/js/events.js"></script>
+    <script src="/assets/js/discover.js"></script>
 </body>
 </html>
