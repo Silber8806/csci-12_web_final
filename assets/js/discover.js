@@ -74,6 +74,8 @@ function createGame(json) {
         .addClass("discover-game-link")
         .appendTo(gameFrame);
     $(gameImage).addClass("discover-game-image")
+        .attr("alt",json.title)
+        .attr("title",json.title)
         .attr("src",image).appendTo(gameLink);
     $(gameMetrics).appendTo(gameFrame);
     $(gameSummary).text(json.summary).addClass("discover-game-summary").appendTo(gameFrame);

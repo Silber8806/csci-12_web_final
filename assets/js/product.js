@@ -55,6 +55,8 @@ function constructProductPage(json) {
     
     var gameTitle = $("<h1>").text(current_game_json["title"]).appendTo("#product-title");
     var gameImage = $("<img>").attr("src",imageUrl)
+        .attr("alt",current_game_json["title"])
+        .attr("title",current_game_json["title"])
         .attr("id","product-gallery-main")
         .appendTo("#product-gallery");
     var gameMetrics = createGameMetrics(current_game_json);
@@ -85,7 +87,29 @@ function constructProductPage(json) {
 
    $(gameMetrics).appendTo("#product-metric");
 
+    setUpSlide(current_game_json);
+    
     return 0;
+}
+
+function setUpSlide(current_game_json){
+   
+    var baseUrl = '/media/images/game-icons/' + current_game_json.id + '/'
+    
+    var allFrames = [];
+    current_game_json.gallery.forEach(function(elm){
+        var newUrl = baseUrl + elm.href;
+        var newFrame = {};
+        newFrame.src = newUrl;
+        newFrame.opts = {caption: elm.title};
+        allFrames.push(newFrame);
+    });
+    
+    $("#product-gallery").on('click', function() {
+      $.fancybox.open(allFrames);
+    });    
+    
+    var all_gallery = [];
 }
 
 function getUrlParameter(sParam) {

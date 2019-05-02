@@ -358,6 +358,14 @@ footer {
     z-index: 1;
 }
 
+footer p {
+    float: right;
+    padding-right: 50px;
+    color: var(--complement-color);
+    font-family: "Quicksand"; 
+    font-size: 13px;
+}
+
 /* END of default styles */
 
 @media only screen and (max-width: 600px) {

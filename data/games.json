@@ -22,8 +22,9 @@
         "complexity": 3.95,
         "main-image": "gloomhaven.jpg",
         "gallery": [
-            {"title": "gloomhaven board", "href": "gloomhaven-board.jpg"},
-            {"title": "gloomhaven character sheet", "href": "gloomhaven-character.jpg"}
+            {"title": "Gloomhaven", "href": "gloomhaven.jpg"},
+            {"title": "Gloomhaven - Board", "href": "gloomhaven-board.jpg"},
+            {"title": "Gloomhaven - Character Sheet", "href": "gloomhaven-character.jpg"}
         ]
     },
     "pandemic" : {
@@ -49,8 +50,9 @@
         "complexity": 2.45,
         "main-image": "pandemic.jpg",
         "gallery": [
-            {"title": "pandemic board", "href": "pandemic-board.jpg"},
-            {"title": "pandemic characters", "href": "pandemic-cards.jpg"}
+            {"title": "Pandemic", "href": "pandemic.jpg"},
+            {"title": "Pandemic - board", "href": "pandemic-board.jpg"},
+            {"title": "Pandemic - Characters", "href": "pandemic-cards.jpg"}
         ]
     },
     "telestrations": {
@@ -76,7 +78,8 @@
         "complexity": 1.05,
         "main-image": "telestrations-after-dark.jpg",
         "gallery": [
-            {"title": "telestrations: after dark - components", "href": "telestrations-images.jpg"}
+            {"title": "Telestrations: After Dark", "href": "telestrations-after-dark.jpg"},
+            {"title": "Telestrations: After Dark - Components", "href": "telestrations-images.jpg"}
         ]
     },
     "descent": {
@@ -102,7 +105,8 @@
         "complexity": 3.25,
         "main-image": "descent-journeys-in-the-dark.jpg",
         "gallery": [
-            {"title": "Descent: Journey into Darkness", "href": "descent-board.jpg"}
+            {"title": "Descent: Journey into Darkness", "href": "descent-journeys-in-the-dark.jpg"},
+            {"title": "Descent: Journey into Darkness - Board", "href": "descent-board.jpg"}
         ]
     },
     "lords-of-waterdeep": {
@@ -128,8 +132,9 @@
         "complexity": 2.55,
         "main-image": "lords-of-waterdeep.jpg",
         "gallery": [
-            {"title": "lords of waterdeep board", "href": "lords-of-waterdeep-board.jpg"},
-            {"title": "lords of waterdeep cards", "href": "lords-of-waterdeep-cards.jpg"}
+            {"title": "Lords of Waterdeep", "href": "lords-of-waterdeep.jpg"},
+            {"title": "Lords of Waterdeep - Board", "href": "lords-of-waterdeep-board.jpg"},
+            {"title": "Lords of Waterdeep - Cards", "href": "lords-of-waterdeep-cards.jpg"}
         ]
     },
     "codenames": {
@@ -155,8 +160,9 @@
         "complexity": 1.35,
         "main-image": "codenames.jpg",
         "gallery": [
-            {"title": "code names - board", "href": "codenames-board.jpg"},
-            {"title": "codenames - solution", "href": "codenames-solution.jpg"}
+            {"title": "Codenames", "href": "codenames.jpg"},
+            {"title": "Codenames - Board", "href": "codenames-board.jpg"},
+            {"title": "Codenames - Solution", "href": "codenames-solution.jpg"}
         ]
     }
 }
